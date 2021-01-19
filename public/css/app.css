@@ -1,0 +1,25 @@
+body {
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    marker: none;
+    display: flex;
+    flex-direction: ;
+    
+}
+
+#help {
+    position: absolute;
+}
+
+footer {
+    display: fixed;
+}
