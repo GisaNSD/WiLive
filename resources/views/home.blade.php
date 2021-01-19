@@ -15,40 +15,40 @@
 
     <img class="logo" src="/imagenes/Logo.png" alt="fondo">
     <p>Desliza para ver el contenido</p>
-    <i class="fas fa-arrow-circle-down"></i>
+    <i class="fas fa-arrow-circle-down downArrow"></i>
 </header>
 
-<section>
+<section class="vidaOnline">
     <h2>¿Qué quieres hacer?</h2>
 
-    <ul class="options">
-        <li>APRENDE</li>
-        <li>VIAJA</li>
-        <li>DEBATE</li>
-        <li>COME</li>
+    <ul>
+        <li class="options">APRENDE</li>
+        <li class="options">VIAJA</li>
+        <li class="options">DEBATE</li>
+        <li class="options">COME</li>
     </ul>
 
 </section>
 
 <footer>
     <button id="help">TE AYUDAMOS</button>
-    <p>Design with LOVE by echoteams</p>
+    <p>Design with ❤ by echoteams</p>
 
-    <nav>
-        <ul>
-            <li>
+    <nav class="mainMenu">
+        <ul class="iconMenu">
+            <li class="iconNav">
                 <i class="fas fa-home"></i>
             </li>
             
-            <li>
+            <li class="iconNav">
                 <i class="far fa-comment-alt"></i>
             </li>
             
-            <li>
+            <li class="iconNav">
                 <i class="far fa-bell"></i>
             </li>
         </ul>
-    </nav>
+    </nav> 
 </footer>
 
 </body>
