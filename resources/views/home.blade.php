@@ -4,20 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WiLive</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/app.css">
 </head>
 <body>
 <header>
-
-<img src="./imagenes/Logo.png" alt="fondo">
+    <img src="/imagenes/Logo.png" alt="fondo">
 </header>
-
-<!-- BANNER -->
-<section class="banner">
-    <img src="" alt="">
-    <h1>BIENVENID@ A LA VIDA<br> ONLINE</h1>
-    <p>Lorem ipsum dolor sit amer, consectetur adipiscing elit.<br> Sed varius risus maecenas integer neque</p>
-</section>
 
 <h2>QUE QUIERES HACER?</h2>
 

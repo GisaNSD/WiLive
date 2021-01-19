@@ -1,4 +1,5 @@
 body {
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -7,6 +8,9 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-image: url("https://picsum.photos/200/300");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 ul {
@@ -22,4 +26,14 @@ ul {
 
 footer {
     display: fixed;
+}
+
+@media(max-width: 650px){
+
+    header {
+        width: 70vh;
+        height: 120vh;
+    }
+
+
 }
