@@ -30,9 +30,25 @@
 
 </section>
 
-<button id="help">TE AYUDAMOS</button>
 <footer>
-Design with LOVE by echoteams
+    <button id="help">TE AYUDAMOS</button>
+    <p>Design with LOVE by echoteams</p>
+
+    <nav>
+        <ul>
+            <li>
+                <i class="fas fa-home"></i>
+            </li>
+            
+            <li>
+                <i class="far fa-comment-alt"></i>
+            </li>
+            
+            <li>
+                <i class="far fa-bell"></i>
+            </li>
+        </ul>
+    </nav>
 </footer>
 
 </body>
