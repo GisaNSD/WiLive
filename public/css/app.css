@@ -4,20 +4,26 @@ body {
 
 
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-image: url("https://picsum.photos/200/300");
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background-image: url("https://picsum.photos/200/400");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+header img{
+    position: absolute;
+    width: 171px;
+    height: 98px;
+    left: 74px;
+    top: 102px;
+
+}
+
 ul {
-    marker: none;
-    display: flex;
-    flex-direction: ;
-    
 }
 
 #help {
@@ -31,8 +37,7 @@ footer {
 @media(max-width: 650px){
 
     header {
-        width: 70vh;
-        height: 120vh;
+        
     }
 
 

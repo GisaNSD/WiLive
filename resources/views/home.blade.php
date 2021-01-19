@@ -18,10 +18,8 @@
 <ul class="options">
     <li>APRENDE</li>
     <li>DEBATE</li>
-    <li>DESCUBRE</li>
     <li>VIAJA</li>
     <li>COME</li>
-    <li>AGENDA</li>
 </ul>
 
 <button id="help">TE AYUDAMOS</button>
