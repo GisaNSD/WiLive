@@ -11,43 +11,26 @@
 </head>
 <body>
 
-<header class="homeHeader">
+    <header class="categoryHeader" >
+        <i class="fas fa-arrow-circle-left downArrow"></i>
+        <h1 class="categoryTitle">APRENDE</h1>
+    </header>
 
-    <a href= "{{route('home')}}">
-        <img class="logo" src="/imagenes/Logo.png" alt="fondo">
-    </a>
-    <p>Desliza para ver el contenido</p>
-    
-    <a href="#vidaOnline">
-        <i class="fas fa-arrow-circle-down downArrow"></i>
-    </a>
 
-</header>
+    <section class="options eventCard">
+        <h5 class="eventTitle">TITULO DEL EVENTO</h5>
+        
+        <p>2/5<p>
+        
+        <button>Entrar</button>
+    </section>
 
-<section id="vidaOnline">
-    <h2>¿Qué quieres hacer?</h2>
-
-    <ul>
-        <a href="{{route('aprende')}}">
-            <li class="options">APRENDE</li>
-        </a>
-        <a href="{{route('viaja')}}">
-            <li class="options">VIAJA</li>
-        </a>
-        <a href="{{route('debate')}}">
-            <li class="options">DEBATE</li>
-        </a>
-        <a href="{{route('come')}}">
-            <li class="options">COME</li>
-        </a>
-    </ul>
-
-</section>
-
-<footer>
+    <button>Abrir Sala</button>
+    <footer>
     <button id="help">TE AYUDAMOS</button>
     <p>Design with ❤ by echoteams</p>
 
+<footer>
     <nav class="mainMenu">
         <ul class="iconMenu">
             <li class="iconNav">
@@ -64,6 +47,6 @@
         </ul>
     </nav> 
 </footer>
-
+    
 </body>
 </html>
