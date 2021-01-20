@@ -15,10 +15,12 @@
 
     <img class="logo" src="/imagenes/Logo.png" alt="fondo">
     <p>Desliza para ver el contenido</p>
+    <a href="#vidaOnline">
     <i class="fas fa-arrow-circle-down downArrow"></i>
+    </a>
 </header>
 
-<section class="vidaOnline">
+<section id="vidaOnline">
     <h2>¿Qué quieres hacer?</h2>
 
     <ul>
