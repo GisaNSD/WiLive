@@ -13,21 +13,33 @@
 
 <header>
 
-    <img class="logo" src="/imagenes/Logo.png" alt="fondo">
-    <p>Desliza para ver el contenido</p>
-    <a href="#vidaOnline">
-    <i class="fas fa-arrow-circle-down downArrow"></i>
+    <a href= "{{route('home')}}">
+        <img class="logo" src="/imagenes/Logo.png" alt="fondo">
     </a>
+    <p>Desliza para ver el contenido</p>
+    
+    <a href="#vidaOnline">
+        <i class="fas fa-arrow-circle-down downArrow"></i>
+    </a>
+
 </header>
 
 <section id="vidaOnline">
     <h2>¿Qué quieres hacer?</h2>
 
     <ul>
-        <li class="options">APRENDE</li>
-        <li class="options">VIAJA</li>
-        <li class="options">DEBATE</li>
-        <li class="options">COME</li>
+        <a href="{{route('aprende')}}">
+            <li class="options">APRENDE</li>
+        </a>
+        <a href="{{route('viaja')}}">
+            <li class="options">VIAJA</li>
+        </a>
+        <a href="{{route('debate')}}">
+            <li class="options">DEBATE</li>
+        </a>
+        <a href="{{route('come')}}">
+            <li class="options">COME</li>
+        </a>
     </ul>
 
 </section>
