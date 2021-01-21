@@ -27,7 +27,7 @@
 <section id="vidaOnline">
     <h2>¿Qué quieres hacer?</h2>
 
-    <ul>
+    <ul class="options-section">
         <a href="{{route('aprende')}}">
             <li class="options">APRENDE</li>
         </a>
