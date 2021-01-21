@@ -12,7 +12,9 @@
 <body>
 
     <header class="categoryHeader" >
-        <i class="fas fa-arrow-circle-left downArrow"></i>
+        <a href="{{route('home')}}">
+            <i class="fas fa-arrow-circle-left downArrow"></i>
+        </a>
         <h1 class="categoryTitle">APRENDE</h1>
     </header>
 
