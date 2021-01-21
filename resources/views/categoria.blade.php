@@ -30,7 +30,7 @@
     <button class="buttonStyle">Crear Sala</button>
     <footer>
     <button id="help">TE AYUDAMOS</button>
-    <p>Design with ❤ by echoteams</p>
+    <p class="copyRight">Design with ❤ by echoteams</p>
 
 <footer>
     <nav class="mainMenu">

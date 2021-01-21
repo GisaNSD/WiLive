@@ -123,6 +123,7 @@ footer button{
 
 /*                   PAGINA DE CATEGORIAS VERSION MOBILE                    */
 
+
 .categoryHeader{
     margin: 1.5vh;
 }
@@ -191,4 +192,72 @@ p.numberCapacity{
 }
 
 
+/***"DESKTOP RESPONSIVE"****/
+@media screen and (min-width: 700px) {
 
+    #vidaOnline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .options-section {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding: 0px;
+        margin: 0px;
+        flex-wrap: wrap;
+        width: 850px;
+    }
+
+    .options {
+        align-self: center;
+        width: 220px;
+        padding: 50px;
+        margin-top: 0px;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 15px;
+    }
+
+    section h2 {
+        font-size: 45px;
+    }
+
+/*CATEGORÍA*/
+
+.categoryHeader{
+    margin: 1.5vh;
+}
+
+    .categoryTitle{
+        letter-spacing: 0.3vh;
+        font-size: 6vh;
+        text-align: center;
+        color: var(--grisOscuro);
+        padding-bottom: 0px;
+    }
+    
+    .eventCard{
+        margin: auto;
+        width: 60vh;
+        height: 30vh;
+    }
+
+    .eventTitle{
+    
+        font-size: 3vh;
+        text-align: center;
+    }
+
+  .copyRight {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        padding-bottom: 0px;
+
+    }
+}
