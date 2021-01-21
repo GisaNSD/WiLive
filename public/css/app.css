@@ -1,44 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+:root{
+    --violeta: #A592E1;
+    --crema: #FFFFF5;
+    --grisClaro: #E0E3D6;
+    --grisOscuro: rgba(86, 98, 112, 0.99);
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
 }
 
-
-header {
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
+.homeHeader {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height: 99vh;
+    margin-left: 0%;
+    margin-right: 0%;
     background-image: url("https://picsum.photos/200/400");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-header img{
-    position: absolute;
-    width: 171px;
-    height: 98px;
-    left: 74px;
-    top: 102px;
+.logo {
+    width: 100%;
+    height: 100%;
+    max-width: 30vh;
+    max-height: 20vh;
+    margin-top: 15vh;
+    filter: drop-shadow(5px 5px 3px var(--grisOscuro));
+}
+
+
+header p{
+   color: var(--violeta);
+   margin-top: 40vh;
+}
+
+.downArrow{
+    color: var(--violeta);
+    margin: 1vh;
+    font-size: 6vh;
+}
+
+section h2 {
+
+    margin: 4vh;
+    font-size: 8vh;
+    text-align: center;
+    color: var(--grisOscuro);
+}
+
+.options {
+
+    background-image: url("https://picsum.photos/200/400");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 3vh;
+    border: none;
+    padding: 10vh;
+    margin: 6vh 1vh;
+    text-align: center;
+    font-weight: 500;
+    font-size: 7vh;
+    line-height: 48px;
+    color: var(--grisClaro);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+footer p{
+    padding-top: 5vh;
+    padding-bottom: 17vh;
+    text-align: center;
+    font-size: 2vh;
+}
+
+footer button{
+    padding-bottom: 10vh;
+    display: flex;
+    margin: auto;
+    background-color: var(--violeta);
+    padding: 3vh 7vh;
+    border: none;
+    border-radius: 7vh;
+    color: white;
+    font-size: 2.5vh;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mainMenu{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--grisOscuro);
+    color: var(--crema);
+    font-size: 6vh;
 
 }
 
-ul {
+.iconMenu{
+    padding: 3vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#help {
-    position: absolute;
-}
 
-footer {
-    display: fixed;
-}
+
 
 @media(max-width: 650px){
 
-    header {
-        
-    }
-
 
 }
+
+
+/*                   CATEGORIA MOBILE                    */
+
+.categoryHeader{
+    margin: 2vh;
+}
+
+.categoryTitle{
+    letter-spacing: 0.3vh;
+    font-size: 7vh;
+    text-align: center;
+    color: var(--grisOscuro);
+    padding-bottom: 5vh;
+}
+
+.eventCard{
+    border: 5px solid red;
+    margin: auto;
+    width: 30vh;
+    height: 15vh;
+}
+
+.eventTitle{
+    
+    font-size: 3vh;
+    text-align: left;
+}
+
