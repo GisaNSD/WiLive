@@ -42,9 +42,7 @@ class User extends Authenticatable
     ];
     public function event()
     {
-        return $this->belongsToMany(Event::class)->withDefault([
-            'id'=> 'event_id'
-        ]);
+        return $this->belongsToMany('App\Models\Event', 'event_user', 'user_id', 'event_id' );
     
     }
 }

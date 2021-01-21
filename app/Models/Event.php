@@ -9,11 +9,43 @@ class Event extends Model
 {
     use HasFactory;
 
-public function user()
+    protected $fillable = [
+        'title',
+        'description',
+        'date',
+        'type',
+        'category',
+        'capacity',
+        'instructor',
+        'link',
+
+    ];
+
+    public function users()
     {
-        return $this->belongsToMany(User::class)->withDefault([
-            'name'=> 'Guest User'
-        ]);
-    
+        return $this->belongsToMany('App\Models\User', 'event_user', 'event_id', 'user_id');
+    }
+
+    private function getNumberOfPeople()
+    {
+        $users = ($this->users());
+        return $users->count();
+    }
+
+     public function isAvailable()
+    {
+        if ($this->getNumberOfPeople() + 1 < $this->capacity) {
+            return true;
+        }
+        return false;
+    }
+
+    public function addUser($userId)
+    {
+        if ($this->isAvailable()) {
+
+            return $this->users()->attach($userId);
+        }
+        return;
     }
 }
