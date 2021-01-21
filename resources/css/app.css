@@ -38,12 +38,23 @@ body {
   max-width: 30vh;
   max-height: 20vh;
   margin-top: 15vh;
+  margin-left: auto;
+  margin-right: auto;
   filter: drop-shadow(5px 5px 3px var(--grisOscuro));
 }
 
-header p {
+.sloganMobile {
+  color: var(--crema);
+  margin-top: 3vh;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 7vh;
+  text-align: center;
+}
+
+.arrowParagraph {
   color: var(--violeta);
-  margin-top: 40vh;
+  margin-top: 20vh;
 }
 
 .downArrow {
@@ -187,13 +198,41 @@ p.numberCapacity {
   display: none;
 }
 
-/***"DESKTOP RESPONSIVE"****/
+/***                      "DESKTOP RESPONSIVE"                   ****/
+
 @media screen and (min-width: 700px) {
+  
+  .logo{
+    padding: 7vh;
+    align-items: center;
+  }
+
+  .header-background {
+    display: flex;
+    width: 100%;
+    padding: 10%;
+    background-image: url("https://picsum.photos/200/400");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .sloganMobile{
+    display: none;
+  }
+
+  .sloganDesktop {
+    color: var(--crema);
+    text-align: center;
+    margin: auto;
+    font-size: 15vh;
+  }
+
   #vidaOnline {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 30vh;
     margin-bottom: 10px;
   }
 
@@ -221,7 +260,7 @@ p.numberCapacity {
     font-size: 45px;
   }
 
-  /*CATEGORÍA*/
+  /*                CATEGORÍA DESKTOP             */
 
   .categoryHeader {
     margin: 1.5vh;
@@ -233,6 +272,7 @@ p.numberCapacity {
     text-align: center;
     color: var(--grisOscuro);
     padding-bottom: 0px;
+  
   }
 
   .eventCard {
@@ -260,28 +300,27 @@ p.numberCapacity {
     height: 72vh;
     margin-left: 0%;
     margin-right: 0%;
+    background-image: none;
   }
 
-  .header-background {
-    display: flex;
-    width: 100%;
-    height: 400px;
-    background-image: url("https://picsum.photos/200/400");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    border: 3px solid red;
-  }
 
   .logo {
     margin-top: 4vh;
   }
 
-  header p {
+  .arrowParagraph {
     display: none;
   }
 
   .arrow {
     display: none;
+  }
+
+  .mainMenu{
+    display: none;
+  }
+
+  footer p{
+    padding-bottom: 8vh;
   }
 }

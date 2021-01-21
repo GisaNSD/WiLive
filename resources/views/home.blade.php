@@ -17,10 +17,13 @@
         <img class="logo" src="/imagenes/Logo.png" alt="fondo">
     </a>
 
-    <div class="header-background"></div>
+    <p class="sloganMobile">Bienvenid@ a la vida online</p>
 
-    <p>Desliza para ver el contenido</p>
-    
+    <div class="header-background">
+        <p class="sloganDesktop">Bienvenid@ a la vida online</p>
+    </div>
+        
+        <p class="arrowParagraph">Desliza para ver el contenido</p>
     <a class="arrow" href="#vidaOnline">
         <i class="fas fa-arrow-circle-down downArrow"></i>
     </a>
