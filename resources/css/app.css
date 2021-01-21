@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
+    text-decoration: none;
 }
 
 :root{
@@ -19,7 +20,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-header {
+.homeHeader {
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -121,4 +122,32 @@ footer button{
 @media(max-width: 650px){
 
 
+}
+
+
+/*                   CATEGORIA MOBILE                    */
+
+.categoryHeader{
+    margin: 2vh;
+}
+
+.categoryTitle{
+    letter-spacing: 0.3vh;
+    font-size: 7vh;
+    text-align: center;
+    color: var(--grisOscuro);
+    padding-bottom: 5vh;
+}
+
+.eventCard{
+    border: 5px solid red;
+    margin: auto;
+    width: 30vh;
+    height: 15vh;
+}
+
+.eventTitle{
+    
+    font-size: 3vh;
+    text-align: left;
 }
