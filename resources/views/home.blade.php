@@ -17,9 +17,11 @@
         <img class="logo" src="/imagenes/Logo.png" alt="fondo">
     </a>
 
+    <div class="header-background"></div>
+
     <p>Desliza para ver el contenido</p>
     
-    <a href="#vidaOnline">
+    <a class="arrow" href="#vidaOnline">
         <i class="fas fa-arrow-circle-down downArrow"></i>
     </a>
 
