@@ -58,11 +58,7 @@
             </a>
             
             <li>
-                <i class="far fa-comment-alt iconNav"></i>
-            </li>
-            
-            <li>
-                <i class="far fa-bell iconNav"></i>
+                <i class="fas fa-user"></i>
             </li>
         </ul>
     </nav> 

@@ -15,7 +15,6 @@
         <a href="{{route('home')}}">
             <i class="fas fa-arrow-circle-left downArrow"></i>
         </a>
-        <i class="far fa-user-circle userIcon"></i>
         <h1 class="categoryTitle">APRENDE</h1>
     </header>
 
@@ -43,11 +42,7 @@
             </li>
             
             <li>
-                <i class="far fa-comment-alt iconNav"></i>
-            </li>
-            
-            <li>
-                <i class="far fa-bell iconNav"></i>
+                <i class="fas fa-user"></i>
             </li>
         </ul>
     </nav> 
