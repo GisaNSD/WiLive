@@ -15,19 +15,20 @@
         <a href="{{route('home')}}">
             <i class="fas fa-arrow-circle-left downArrow"></i>
         </a>
+        <i class="far fa-user-circle userIcon"></i>
         <h1 class="categoryTitle">APRENDE</h1>
     </header>
 
 
     <section class="options eventCard">
-        <h5 class="eventTitle">TITULO DEL EVENTO</h5>
         
-        <p>2/5<p>
-        
-        <button>Entrar</button>
+        <h5 class="eventTitle">Título evento</h5>
+        <p class="numberCapacity">2/5<p>
+        <button class="enterButton">Entrar</button>
+    
     </section>
-
-    <button>Abrir Sala</button>
+    
+    <button class="buttonStyle">Crear Sala</button>
     <footer>
     <button id="help">TE AYUDAMOS</button>
     <p>Design with ❤ by echoteams</p>
@@ -35,16 +36,18 @@
 <footer>
     <nav class="mainMenu">
         <ul class="iconMenu">
-            <li class="iconNav">
-                <i class="fas fa-home"></i>
+            <li>
+            <a href="{{ route('home') }}">
+                    <i class="fas fa-home iconNav"></i>
+            </a>
             </li>
             
-            <li class="iconNav">
-                <i class="far fa-comment-alt"></i>
+            <li>
+                <i class="far fa-comment-alt iconNav"></i>
             </li>
             
-            <li class="iconNav">
-                <i class="far fa-bell"></i>
+            <li>
+                <i class="far fa-bell iconNav"></i>
             </li>
         </ul>
     </nav> 

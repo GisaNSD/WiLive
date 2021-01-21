@@ -16,6 +16,7 @@
     <a href= "{{route('home')}}">
         <img class="logo" src="/imagenes/Logo.png" alt="fondo">
     </a>
+
     <p>Desliza para ver el contenido</p>
     
     <a href="#vidaOnline">
@@ -50,16 +51,18 @@
 
     <nav class="mainMenu">
         <ul class="iconMenu">
-            <li class="iconNav">
-                <i class="fas fa-home"></i>
+            <a href="{{ route('home') }}"> 
+                <li>
+                    <i class="fas fa-home iconNav"></i>
+                </li>
+            </a>
+            
+            <li>
+                <i class="far fa-comment-alt iconNav"></i>
             </li>
             
-            <li class="iconNav">
-                <i class="far fa-comment-alt"></i>
-            </li>
-            
-            <li class="iconNav">
-                <i class="far fa-bell"></i>
+            <li>
+                <i class="far fa-bell iconNav"></i>
             </li>
         </ul>
     </nav> 

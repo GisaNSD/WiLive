@@ -20,6 +20,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+
 .homeHeader {
     display:flex;
     flex-direction: column;
@@ -116,39 +117,84 @@ footer button{
     align-items: center;
 }
 
-
-
-
-@media(max-width: 650px){
-
-
+.iconNav{
+    color: var(--grisClaro);
 }
 
+/*                   PAGINA DE CATEGORIAS VERSION MOBILE                    */
 
-/*                   CATEGORIA MOBILE                    */
-
+.userIcon{
+    position: absolute;
+    right: 2.3vh;
+    top: 2.5vh;
+    color: var(--violeta);
+    font-size: 6vh;
+}
 .categoryHeader{
-    margin: 2vh;
+    margin: 1.5vh;
 }
 
 .categoryTitle{
     letter-spacing: 0.3vh;
-    font-size: 7vh;
+    font-size: 8vh;
     text-align: center;
     color: var(--grisOscuro);
+    padding-top: 3vh;
     padding-bottom: 5vh;
 }
 
 .eventCard{
-    border: 5px solid red;
     margin: auto;
     width: 30vh;
-    height: 15vh;
+    height: 13vh;
+    border-radius: 6vh;
+    margin-bottom: 10vh;
+    box-shadow: 3px 5px 10px 0px var(--grisOscuro);
 }
 
-.eventTitle{
-    
-    font-size: 3vh;
+.eventTitle {
+    position: relative;
+    left: -6vh;
+    top: -6vh;
     text-align: left;
+    font-size: 5vh;
+    color: var(--grisOscuro);
 }
+
+.buttonStyle {
+    display: flex;
+    margin: 5vh auto;
+    background-color: var(--violeta);
+    padding: 1.5vh 4vh;
+    border: none;
+    border-radius: 7vh;
+    color: white;
+    font-size: 4vh;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.numberCapacity{
+    position: relative;
+    color: white;
+    left: 18vh;
+    bottom: 2vh;
+    font-size: 5vh;
+}
+
+.enterButton{
+    position: relative;
+    left: 15vh;
+    bottom: 2vh;
+    background-color: var(--violeta);
+    border: none;
+    padding: 1.5vh 2.5vh;
+    border-radius: 7vh;
+    color: white;
+    font-size: 4vh;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+
+
+
 
