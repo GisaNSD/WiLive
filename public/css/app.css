@@ -325,3 +325,27 @@ p.numberCapacity {
   }
 }
 
+
+/*        PAGE IN PROGRESS          */
+
+.backgroundInProgress{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoInProgress{
+  padding-top: 10vh;
+  padding-bottom: 3vh;
+  
+}
+
+.textInProgress{
+  font-size: 4vh;
+  text-align: center;
+  padding-bottom: 5vh;
+  color: var(--violeta);
+}
+
+

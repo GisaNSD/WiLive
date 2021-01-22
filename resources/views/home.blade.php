@@ -51,7 +51,10 @@
 </section>
 
 <footer>
-    <button id="help">TE AYUDAMOS</button>
+    <a href="{{'te-ayudamos'}}">
+        <button id="help">TE AYUDAMOS</button>
+    </a>
+
     <p>Design with ❤ by echoteams</p>
 
     <nav class="mainMenu">
@@ -61,10 +64,12 @@
                     <i class="fas fa-home iconNav"></i>
                 </li>
             </a>
-            
-            <li>
-                <i class="fas fa-user"></i>
-            </li>
+
+            <a href="{{ route('perfil') }}">   
+                <li>
+                    <i class="fas fa-user iconNav"></i>
+                </li>
+            </a>
         </ul>
     </nav> 
 </footer>

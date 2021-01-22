@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1.0">
     <title>WiLive</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -40,10 +40,11 @@
                     <i class="fas fa-home iconNav"></i>
             </a>
             </li>
-            
+            <a href="{{ route('perfil') }}">
             <li>
-                <i class="fas fa-user"></i>
+                <i class="fas fa-user iconNav"></i>
             </li>
+            </a>
         </ul>
     </nav> 
 </footer>

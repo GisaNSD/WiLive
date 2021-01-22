@@ -22,13 +22,22 @@ Route::get('/aprende', function () {
 })->name('aprende');
 
 Route::get('/viaja', function () {
-    return view('categoria');
+    return view('pageInProgress');
 })->name('viaja');
 
 Route::get('/debate', function () {
-    return view('categoria');
+    return view('pageInProgress');
 })->name('debate');
 
 Route::get('/come', function () {
-    return view('categoria');
+    return view('pageInProgress');
 })->name('come');
+
+Route::get('/te-ayudamos', function () {
+    return view('pageInProgress');
+})->name('te-ayudamos');
+
+Route::get('/perfil', function () {
+    return view('pageInProgress');
+})->name('perfil');
+
