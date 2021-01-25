@@ -6,10 +6,8 @@
 }
 
 :root {
-  --violeta: #a592e1;
-  --crema: #fffff5;
-  --grisClaro: #e0e3d6;
-  --grisOscuro: rgba(86, 98, 112, 0.99);
+  --verde: #16697A;
+  --amarillo: #FFD369;
 }
 
 ::-webkit-scrollbar {
@@ -17,17 +15,17 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .homeHeader {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 99vh;
+  height: 98vh;
   margin-left: 0%;
   margin-right: 0%;
-  background-image: url("https://picsum.photos/200/400");
+  background-color: var(--amarillo);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -37,97 +35,132 @@ body {
   height: 100%;
   max-width: 30vh;
   max-height: 20vh;
-  margin-top: 15vh;
+  margin-top: 10vh;
   margin-left: auto;
   margin-right: auto;
-  filter: drop-shadow(5px 5px 3px var(--grisOscuro));
+  margin-bottom: 2vh;
 }
 
 .sloganMobile {
-  color: var(--crema);
+  color: white;
   margin-top: 3vh;
   margin-left: auto;
   margin-right: auto;
-  font-size: 7vh;
+  font-size: 6vh;
   text-align: center;
 }
 
+.descriptiveTextMobile{
+  font-family: 'DM Sans', sans-serif;
+  color: var(--verde);
+  font-size: 3.5vh;
+  text-align: center;
+  margin: 3vh
+}
+
 .arrowParagraph {
-  color: var(--violeta);
-  margin-top: 20vh;
+  color: var(--verde);
+  margin-top: 8vh;
 }
 
 .downArrow {
-  color: var(--violeta);
+  color: var(--verde);
   margin: 1vh;
   font-size: 6vh;
 }
 
 section h2 {
-  margin: 4vh;
-  font-size: 8vh;
+  margin: 6vh;
+  margin-bottom: 10vh;
+  font-size: 6.5vh;
   text-align: center;
-  color: var(--grisOscuro);
+  color: var(--verde);
+
+}
+
+.options-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .options {
-  background-image: url("https://picsum.photos/200/400");
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 3vh;
-  border: none;
-  padding: 10vh;
-  margin: 6vh 1vh;
+  margin-top: 0;
+  margin-bottom: 10vh;
   text-align: center;
   font-weight: 500;
-  font-size: 7vh;
-  line-height: 48px;
-  color: var(--grisClaro);
+  font-size: 8vh;
+  color: var(--verde);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-footer p {
-  padding-top: 5vh;
-  padding-bottom: 17vh;
-  text-align: center;
-  font-size: 2vh;
+.imageMenu{
+  border-radius: 3vh;
+  margin-bottom: 0;
+  width: 80vw;
+  max-width: 90vw;
+  height: 30vh;
 }
 
 footer button {
   padding-bottom: 10vh;
   display: flex;
   margin: auto;
-  background-color: var(--violeta);
-  padding: 3vh 7vh;
+  background-color: var(--verde);
+  padding: 3vh 5vh;
   border: none;
   border-radius: 7vh;
-  color: white;
-  font-size: 2.5vh;
+  color: var(--amarillo);
+  font-size: 3.5vh;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.copyRight{
+  padding-top: 5vh;
+  padding-bottom: 17vh;
+  text-align: center;
+  font-size: 2vh;
+  color: var(--amarillo);
+}
+
+.heart{
+  color: var(--verde);
 }
 
 .mainMenu {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: var(--grisOscuro);
-  color: var(--crema);
-  font-size: 6vh;
+  background-color: var(--verde);
 }
 
 .iconMenu {
-  padding: 3vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-content: center;
+  padding: 1.5vh;
+}
+
+.liMainMenu{
+  text-align: center;
 }
 
 .iconNav {
-  color: var(--grisClaro);
+  font-size: 5vh;
+  color: var(--amarillo);
 }
 
+.iconText{
+  padding: 1vh;
+  font-size: 2vh;
+  color: var(--amarillo);
+}
+
+
 /*                   PAGINA DE CATEGORIAS VERSION MOBILE                    */
+
 
 .categoryHeader {
   margin: 1.5vh;
@@ -137,59 +170,56 @@ footer button {
   letter-spacing: 0.3vh;
   font-size: 8vh;
   text-align: center;
-  color: var(--grisOscuro);
+  color: var(--verde);
   padding-top: 3vh;
   padding-bottom: 5vh;
 }
 
-.eventCard {
-  margin: auto;
-  width: 30vh;
-  height: 13vh;
-  border-radius: 6vh;
-  margin-bottom: 10vh;
-  box-shadow: 3px 5px 10px 0px var(--grisOscuro);
-}
-
 .eventTitle {
-  position: relative;
-  left: -6vh;
-  top: -6vh;
-  text-align: left;
-  font-size: 5vh;
-  color: var(--grisOscuro);
+  font-size: 3.5vh;
+  color: var(--verde);
+  margin-left: 5vw;
+  margin-bottom: 1vh;
 }
 
-.buttonStyle {
+.imageSpan{
   display: flex;
-  margin: 5vh auto;
-  background-color: var(--violeta);
-  padding: 1.5vh 4vh;
-  border: none;
-  border-radius: 7vh;
-  color: white;
-  font-size: 4vh;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  flex-direction: column;
+  align-items: center;
 }
+
+.imageEventCard{
+  border-radius: 7vh;
+  width: 90vw;
+  height: 40vh;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.buttonCapacityContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 2vh;
+  margin-right: 7vw;
+  margin-bottom: 7vh;
+}
+
 
 p.numberCapacity {
-  text-align: right;
+  margin-right: 3vh;
+  margin-top: 0.5vh;
   font-size: 5vh;
-  position: relative;
-  bottom: 1vh;
-  left: 7vh;
-  color: white;
+  font-weight: bold;
+  color: var(--verde);
 }
 
 .enterButton {
-  position: relative;
-  left: 15vh;
-  bottom: 2vh;
-  background-color: var(--violeta);
+  background-color: var(--amarillo);
   border: none;
   padding: 1.5vh 2.5vh;
   border-radius: 7vh;
-  color: white;
+  color: var(--verde);
   font-size: 4vh;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -198,19 +228,34 @@ p.numberCapacity {
   display: none;
 }
 
+.createButton {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5vh;
+  background-color: var(--amarillo);
+  padding: 1.5vh 4vh;
+  border: none;
+  border-radius: 7vh;
+  color: var(--verde);
+  font-size: 4vh;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 /***                      "DESKTOP RESPONSIVE"                   ****/
 
 @media screen and (min-width: 700px) {
   
   .logo{
     padding: 7vh;
-    align-items: center;
   }
 
+  
   .header-background {
     display: flex;
+    flex-direction: column;
     width: 100%;
-    padding: 10%;
+    height: 65vh;
     background-image: url("https://picsum.photos/200/400");
     background-repeat: no-repeat;
     background-size: cover;
@@ -221,10 +266,24 @@ p.numberCapacity {
   }
 
   .sloganDesktop {
-    color: var(--crema);
+    color: white;
     text-align: center;
-    margin: auto;
-    font-size: 15vh;
+    margin: 10vh 5vh;
+    font-size: 12vh;
+  }
+
+  .descriptiveTextMobile{
+    display: none;
+  }
+
+  .descriptiveTextDesktop{
+    
+    padding-bottom: 20vh;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--verde);
+    font-size: 7vh;
+    text-align: center;
   }
 
   #vidaOnline {
@@ -233,17 +292,16 @@ p.numberCapacity {
     align-items: center;
     justify-content: center;
     margin-top: 30vh;
-    margin-bottom: 10px;
   }
 
   .options-section {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-content: center;
     padding: 0px;
-    margin: 0px;
-    flex-wrap: wrap;
-    width: 850px;
+    margin-top: 4vh;
+    width: 40vw;
   }
 
   .options {
@@ -255,6 +313,11 @@ p.numberCapacity {
     margin-right: 40px;
     margin-bottom: 15px;
   }
+
+.categoryDesktopContainer{
+  display: flex;
+  flex-direction: column;
+}
 
   section h2 {
     font-size: 45px;
@@ -270,7 +333,7 @@ p.numberCapacity {
     letter-spacing: 0.3vh;
     font-size: 6vh;
     text-align: center;
-    color: var(--grisOscuro);
+    color: var(--verde);
     padding-bottom: 0px;
   
   }
@@ -300,7 +363,7 @@ p.numberCapacity {
     height: 72vh;
     margin-left: 0%;
     margin-right: 0%;
-    background-image: none;
+    background-color: white;
   }
 
 
@@ -345,6 +408,6 @@ p.numberCapacity {
   font-size: 4vh;
   text-align: center;
   padding-bottom: 5vh;
-  color: var(--violeta);
+  color: var(--verde);
 }
 

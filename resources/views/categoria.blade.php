@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/app.css">
     <script src="https://kit.fontawesome.com/b1ccc03917.js" crossorigin="anonymous"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -18,32 +20,42 @@
         <h1 class="categoryTitle">APRENDE</h1>
     </header>
 
-
-    <section class="options eventCard">
-        
+    <main>        
         <h5 class="eventTitle">Título evento</h5>
-        <p class="numberCapacity">2/5<p>
-        <button class="enterButton">Entrar</button>
-    
-    </section>
-    
-    <button class="buttonStyle">Crear Sala</button>
-    <footer>
-    <button id="help">TE AYUDAMOS</button>
-    <p class="copyRight">Design with ❤ by echoteams</p>
 
-<footer>
+        <span class="imageSpan">
+            <img class="imageEventCard" src="https://picsum.photos/200/200" alt="">
+        </span>
+        
+        <div class="buttonCapacityContainer">
+            <p class="numberCapacity">2/5<p>
+            <button class="enterButton">Entrar</button>
+        </div>
+    
+        <button class="createButton">Crear Sala</button>
+    </main>
+   
+    <footer>
+    <a href="{{'te-ayudamos'}}">
+        <button id="help">Te ayudamos</button>
+    </a>
+
+    <p class="copyRight">Design with <span class="heart">❤</span> by echoteams</p>
+
     <nav class="mainMenu">
         <ul class="iconMenu">
-            <li>
-            <a href="{{ route('home') }}">
+            <a href="{{ route('home') }}"> 
+                <li class="liMainMenu">
                     <i class="fas fa-home iconNav"></i>
+                    <p class="iconText">Inicio</p>
+                </li>
             </a>
-            </li>
-            <a href="{{ route('perfil') }}">
-            <li>
-                <i class="fas fa-user iconNav"></i>
-            </li>
+
+            <a href="{{ route('perfil') }}">   
+                <li class="liMainMenu">
+                    <i class="fas fa-user iconNav"></i>
+                    <p class="iconText">Perfil</p>
+                </li>
             </a>
         </ul>
     </nav> 

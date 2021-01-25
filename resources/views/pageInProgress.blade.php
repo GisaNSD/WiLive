@@ -8,7 +8,7 @@
 </head>
 <body class="backgroundInProgress">
     <a href= "{{route('home')}}">
-        <img class="logoInProgress" src="/imagenes/Logo.png" alt="fondo">
+        <img class="logoInProgress" src="/imagenes/Logo.svg" alt="fondo">
     </a>
 
     <p class="textInProgress">Esta página está en progreso, por favor vuelve más tarde</p>
