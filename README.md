@@ -1,3 +1,19 @@
+*****COMO INSTALAR LARAVEL*****
+Clonar repositorio
+Moverte a dentro de la carpeta: cd WILIVE-MAIN
+Composer install
+npm install
+Abrir Apache en Xampp (ojo!: el antivirus puede bloquear a Xampp!!)
+CAMBIAR file: '.env.example' a '.env'
+php artisan key: generate
+npm run dev
+php artisan serve (en un nuevo terminal)
+
+**suerte!!**
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
