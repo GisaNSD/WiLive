@@ -37,7 +37,7 @@ Route::get('/te-ayudamos', function () {
     return view('pageInProgress');
 })->name('te-ayudamos');
 
-Route::get('/perfil', function () {
-    return view('pageInProgress');
-})->name('perfil');
+Route::get('/profile', function () {
+    return view('profile');
+})->name('profile');
 

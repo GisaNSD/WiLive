@@ -1,0 +1,33 @@
+.profilePic {
+    border: 0px solid black;
+    border-radius: 50%;
+    height: 20vh;
+    width: 20vh ;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.picture {
+    padding-bottom: 4vh;
+}
+
+.profileInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    padding-bottom: 4vh;
+}
+
+.profileInfo input{
+    height: 8vh;
+    padding-left: 3vh;
+
+}
