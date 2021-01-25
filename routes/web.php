@@ -32,3 +32,4 @@ Route::get('/debate', function () {
 Route::get('/come', function () {
     return view('categoria');
 })->name('come');
+
