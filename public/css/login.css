@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat:wght@300;400&display=swap");
+
+* {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  color: var(--primary);
+}
+/* font-family: 'DM Sans', sans-serif;
+font-family: 'Montserrat', sans-serif; */
+:root {
+  --primary: #16697a;
+  --secondary: #ffd369;
+  --terciary: #ffffff;
+}
+
+.forget-password-container {
+  text-align: center;
+}
+
+.forget-password-link {
+  color: var(--primary);
+}
+
+.forget-password-link:hover {
+  text-decoration: underline;
+  color: var(--primary);
+}
+
+.buttons-container {
+  flex-wrap: wrap;
+  margin-top: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.button-access {
+  width: 170px;
+  height: 54px;
+  border-radius: 28px;
+  background-color: var(--primary);
+  color: var(--secondary);
+  border: none;
+  font-size: 20px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.button-access:hover {
+  border: 2px solid var(--secondary);
+}
+
+.button-back {
+  width: 170px;
+  height: 54px;
+  border-radius: 28px;
+  background-color: var(--secondary);
+  color: var(--primary);
+  border: none;
+  font-size: 20px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.button-back:hover {
+  border: 2px solid var(--primary);
+}
+
+@media screen and (max-width: 320px) {
+  .logo {
+    width: 150px;
+  }
+
+  .button-access {
+    margin: 5px;
+  }
+
+  .button-back {
+    margin: 5px;
+  }
+}

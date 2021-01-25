@@ -1,25 +1,19 @@
-body {
-}
-
-
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 ul {
-    marker: none;
-    display: flex;
-    flex-direction: ;
-    
+  marker: none;
+  display: flex;
 }
 
 #help {
-    position: absolute;
+  position: absolute;
 }
 
 footer {
-    display: fixed;
+  display: fixed;
 }
