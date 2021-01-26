@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/css/app.css">
     <script src="https://kit.fontawesome.com/b1ccc03917.js" crossorigin="anonymous"></script>
 
-    
+
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat:wght@500&display=swap" rel="stylesheet">
 </head>
 
@@ -18,20 +18,20 @@
 <header class="homeHeader">
 
     <a href= "{{route('home')}}">
-        <img class="logo" src="/imagenes/Logo.svg" alt="fondo">
+        <img class="logo" src="/imagenes/Logo.svg" alt="wilive logo">
     </a>
 
     <p class="sloganMobile">Conéctate a la vida online</p>
 
     <div class="header-background">
 
-        <p class="sloganDesktop">Conéctate a la vida online</p>    
+        <p class="sloganDesktop">Conéctate a la vida online</p>
         <p class="descriptiveTextDesktop">Crea y asiste a eventos desde casa.</p>
-    
+
     </div>
-    
+
     <p class="descriptiveTextMobile">Crea y asiste a eventos desde casa.</p>
-        
+
         <p class="arrowParagraph">Desliza para ver el contenido</p>
     <a class="arrow" href="#vidaOnline">
         <i class="fas fa-arrow-circle-down downArrow"></i>
@@ -42,30 +42,35 @@
 <section id="vidaOnline">
     <h2>¿Qué quieres hacer?</h2>
 
-    <ul class="options-section">
-        
-    <div class="categoryDesktopContainer">
-        <a href="{{route('aprende')}}">
-            <img class="imageMenu" src="https://picsum.photos/200/400" alt="">
-        </a>
-        <li class="options">APRENDE</li>
+    <div class="options-section">
+        <div class="categoryDesktopContainer">
+            <a href="{{route('aprende')}}">
+                <img class="imageMenu" src="https://picsum.photos/200/400" alt="">
+            </a>
+            <span class="options">APRENDE</span>
+        </div>
+
+        <div class="categoryDesktopContainer">
+            <a href="{{route('viaja')}}">
+                <img class="imageMenu" src="https://picsum.photos/200/400" alt="">
+            </a>
+            <li class="options">VIAJA</li>
+        </div>
+
+        <div class="categoryDesktopContainer">
+            <a href="{{route('debate')}}">
+                <img class="imageMenu" src="https://picsum.photos/200/400" alt="">
+            </a>
+            <li class="options">DEBATE</li>
+        </div>
+
+        <div class="categoryDesktopContainer">
+            <a href="{{route('come')}}">
+                <img class="imageMenu" src="https://picsum.photos/200/400" alt="">
+            </a>
+            <li class="options">COME</li>
+        </div>
     </div>
-        
-        <a href="{{route('viaja')}}">
-            <img class="imageMenu" src="https://picsum.photos/200/400" alt="">
-        </a>
-        <li class="options">VIAJA</li>
-        
-        <a href="{{route('debate')}}">
-            <img class="imageMenu" src="https://picsum.photos/200/400" alt="">
-        </a>
-        <li class="options">DEBATE</li>
-    
-        <a href="{{route('come')}}">
-            <img class="imageMenu" src="https://picsum.photos/200/400" alt="">       
-        </a>
-        <li class="options">COME</li>
-    </ul>
 
 </section>
 
@@ -78,21 +83,21 @@
 
     <nav class="mainMenu">
         <ul class="iconMenu">
-            <a href="{{ route('home') }}"> 
+            <a href="{{ route('home') }}">
                 <li class="liMainMenu">
                     <i class="fas fa-home iconNav"></i>
                     <p class="iconText">Inicio</p>
                 </li>
             </a>
 
-            <a href="{{ route('perfil') }}">   
+            <a href="{{ route('perfil') }}">
                 <li class="liMainMenu">
                     <i class="fas fa-user iconNav"></i>
                     <p class="iconText">Perfil</p>
                 </li>
             </a>
         </ul>
-    </nav> 
+    </nav>
 </footer>
 
 </body>
