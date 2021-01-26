@@ -376,7 +376,7 @@ p.numberCapacity {
     display: flex;
     justify-content: center;
     padding: 10px;
-    padding-bottom: 0px;
+    padding-bottom: 10px;
   }
 
   .homeHeader {
