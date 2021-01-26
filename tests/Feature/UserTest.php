@@ -4,6 +4,7 @@ namespace Tests\Feature;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
+use App\Models\User;
 use Tests\TestCase;
 
 class UserTest extends TestCase
@@ -14,5 +15,11 @@ class UserTest extends TestCase
      *
      * @return void
      */
-    
+    public function test_I_can_add_user_in_db()
+    {
+        $user = User::factory()->create();
+
+        $this->assertDatabaseCount('users', 1);
+        $this->assertDatabaseHas('users', ['name' => $user->name]);
+    }
 }
