@@ -13,7 +13,6 @@ class EventDetails extends Model
         'title',
         'description',
         'type',
-        'date',
         'link',
 
     ];

@@ -25,7 +25,6 @@ class EventDetailsFactory extends Factory
             'title' => $this->faker->text(25),
             'description' => $this->faker->text(50),
             'type' => $this->faker->text(20),
-            'date' => $this->faker->text(10),
             'category' => $this->faker->text(25),
             'user_id' => $this->faker->numberBetween(1),
         ];
