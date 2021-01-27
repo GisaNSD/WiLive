@@ -2,42 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1.0">
-    <title>WiLive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/app.css">
     <script src="https://kit.fontawesome.com/b1ccc03917.js" crossorigin="anonymous"></script>
-    
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header class="categoryHeader" >
+<header class="categoryHeader" >
         <a href="{{route('home')}}">
             <i class="fas fa-arrow-circle-left downArrow"></i>
         </a>
-        <h1 class="categoryTitle">APRENDE</h1>
-    </header>
+        <a href="">
+            <i class="fas fa-user-edit downArrow"></i>
+        </a>
+</header>
+<div class="picture">
+<img class="profilePic" src="https://picsum.photos/id/1/200/300" alt="profile picture">
+</div>
 
-    <main>        
-        <h5 class="eventTitle">Título evento</h5>
+<form action="create_profile" class="profileInfo">
+    <input type="text" placeholder="Nombre y Apellidos">
+    <input type="text" placeholder="Correo">
+    <input type="password" placeholder="Contraseña">
+    <!-- <input type="text" placeholder="Intereses"> -->
+</form>
 
-        <span class="imageSpan">
-            <img class="imageEventCard" src="https://picsum.photos/200/200" alt="">
-        </span>
-        
-        <div class="buttonCapacityContainer">
-            <p class="numberCapacity">2/5<p>
-            <button class="enterButton">Entrar</button>
-        </div>
-    
-        <button class="createButton">Crear Sala</button>
-    </main>
-   
-    <footer>
-    <a href="{{'te-ayudamos'}}">
-        <button id="help">Te ayudamos</button>
+
+<footer>
+    <a href="{{''}}">
+        <button id="help">Cerrar Sesión</button>
     </a>
 
     <p class="copyRight">Design with <span class="heart">❤</span> by echoteam</p>
@@ -60,6 +56,5 @@
         </ul>
     </nav> 
 </footer>
-    
 </body>
 </html>

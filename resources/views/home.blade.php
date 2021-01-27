@@ -79,7 +79,7 @@
         <button id="help">Te ayudamos</button>
     </a>
 
-    <p class="copyRight">Design with <span class="heart">❤</span> by echoteams</p>
+    <p class="copyRight">Design with <span class="heart">❤</span> by echoteam</p>
 
     <nav class="mainMenu">
         <ul class="iconMenu">
@@ -90,7 +90,7 @@
                 </li>
             </a>
 
-            <a href="{{ route('perfil') }}">
+            <a href="{{ route('profile') }}">   
                 <li class="liMainMenu">
                     <i class="fas fa-user iconNav"></i>
                     <p class="iconText">Perfil</p>

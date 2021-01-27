@@ -33,3 +33,11 @@ Route::get('/come', function () {
     return view('pageInProgress');
 })->name('come');
 
+Route::get('/te-ayudamos', function () {
+    return view('pageInProgress');
+})->name('te-ayudamos');
+
+Route::get('/profile', function () {
+    return view('profile');
+})->name('profile');
+
