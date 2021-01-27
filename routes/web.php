@@ -33,14 +33,3 @@ Route::get('/come', function () {
     return view('pageInProgress');
 })->name('come');
 
-<<<<<<< HEAD
-Route::get('/te-ayudamos', function () {
-    return view('pageInProgress');
-})->name('te-ayudamos');
-
-Route::get('/perfil', function () {
-    return view('pageInProgress');
-})->name('perfil');
-
-=======
->>>>>>> origin/CRUD
