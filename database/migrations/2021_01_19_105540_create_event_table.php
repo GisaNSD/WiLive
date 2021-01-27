@@ -13,9 +13,16 @@ class CreateEventTable extends Migration
      */
     public function up()
     {
-        Schema::create('event', function (Blueprint $table) {
+        Schema::create('event_details', function (Blueprint $table) {
             $table->id();
+           
+            $table->string("title");
+            $table->text("description");
+            $table->string("type");
+            $table->string("category");
             $table->timestamps();
+            $table->unsignedBigInteger('user_id');
+            $table->string("link")->nullable();
         });
     }
 
@@ -26,6 +33,6 @@ class CreateEventTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('event');
+        Schema::dropIfExists('event_details');
     }
 }
