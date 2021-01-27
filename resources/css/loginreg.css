@@ -3,10 +3,9 @@
 * {
   font-family: "DM Sans", sans-serif;
   font-size: 20px;
-  color: var(--primary);
+  color: #16697a;
 }
-/* font-family: 'DM Sans', sans-serif;
-font-family: 'Montserrat', sans-serif; */
+
 :root {
   --primary: #16697a;
   --secondary: #ffd369;
@@ -18,12 +17,11 @@ font-family: 'Montserrat', sans-serif; */
 }
 
 .forget-password-link {
-  color: var(--primary);
+  color: #16697a;
 }
 
 .forget-password-link:hover {
   text-decoration: underline;
-  color: var(--primary);
 }
 
 .buttons-container {
@@ -38,30 +36,30 @@ font-family: 'Montserrat', sans-serif; */
   width: 170px;
   height: 54px;
   border-radius: 28px;
-  background-color: var(--primary);
-  color: var(--secondary);
+  background-color: #16697a;
+  color: #ffd369;
   border: none;
   font-size: 20px;
   font-family: "DM Sans", sans-serif;
 }
 
 .button-access:hover {
-  border: 2px solid var(--secondary);
+  border: 2px solid #ffd369;
 }
 
 .button-back {
   width: 170px;
   height: 54px;
   border-radius: 28px;
-  background-color: var(--secondary);
-  color: var(--primary);
+  background-color: #ffd369;
+  color: #16697a;
   border: none;
   font-size: 20px;
   font-family: "DM Sans", sans-serif;
 }
 
 .button-back:hover {
-  border: 2px solid var(--primary);
+  border: 2px solid #16697a;
 }
 
 @media screen and (max-width: 320px) {
