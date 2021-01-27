@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import 'profile.css';
 
 * {
@@ -434,3 +435,24 @@ p.numberCapacity {
   color: var(--verde);
 }
 
+=======
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  marker: none;
+  display: flex;
+}
+
+#help {
+  position: absolute;
+}
+
+footer {
+  display: fixed;
+}
+>>>>>>> origin/login
