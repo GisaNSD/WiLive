@@ -1,6 +1,6 @@
 // Fonts
 // @import url("https://fonts.googleapis.com/css?family=Nunito");
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat:wght@300;400&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat:wght@300;400&display=swap");
 
 // Variables
 @import "variables";
@@ -10,3 +10,7 @@
 
 //Login-register
 @import "../css/loginreg.css";
+
+//styles from css
+@import "/resources/css/app.css";
+
