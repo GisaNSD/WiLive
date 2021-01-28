@@ -1,16 +1,11 @@
-@import 'profile.css';
-@import 'loginreg.css';
+@import "profile.css";
+@import "createevent.css";
 
 * {
   margin: 0;
   padding: 0;
   list-style-type: none;
   text-decoration: none;
-}
-
-:root {
-  --verde: #16697A;
-  --amarillo: #FFD369;
 }
 
 ::-webkit-scrollbar {
@@ -53,17 +48,17 @@ body {
   text-align: center;
 }
 
-.descriptiveTextMobile{
-  font-family: 'DM Sans', sans-serif;
+.descriptiveTextMobile {
+  font-family: "DM Sans", sans-serif;
   color: var(--verde);
   font-size: 3.5vh;
   text-align: center;
-  margin: 3vh
+  margin: 3vh;
 }
 
 .arrowParagraph {
   color: var(--verde);
-  margin-top: 12vh;
+  margin-top: 8vh;
 }
 
 .downArrow {
@@ -72,16 +67,10 @@ body {
   font-size: 6vh;
 }
 
-#vidaOnline {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 section h2 {
   margin: 6vh;
   margin-bottom: 10vh;
-  font-size: 5vh;
+  font-size: 6.5vh;
   text-align: center;
   color: var(--verde);
 }
@@ -91,21 +80,6 @@ section h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-}
-
-.categoryDesktopContainer {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-}
-
-.imageMenu{
-  border-radius: 3vh;
-  margin-bottom: 0;
-  width: 300px;
-  height: 200px;
-  object-fit: cover;
 }
 
 .options {
@@ -118,7 +92,13 @@ section h2 {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-
+.imageMenu {
+  border-radius: 3vh;
+  margin-bottom: 0;
+  width: 80vw;
+  max-width: 90vw;
+  height: 30vh;
+}
 
 footer button {
   padding-bottom: 10vh;
@@ -133,7 +113,7 @@ footer button {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.copyRight{
+.copyRight {
   padding-top: 5vh;
   padding-bottom: 17vh;
   text-align: center;
@@ -141,7 +121,7 @@ footer button {
   color: var(--amarillo);
 }
 
-.heart{
+.heart {
   color: var(--verde);
 }
 
@@ -160,7 +140,7 @@ footer button {
   padding: 1.5vh;
 }
 
-.liMainMenu{
+.liMainMenu {
   text-align: center;
 }
 
@@ -169,14 +149,14 @@ footer button {
   color: var(--amarillo);
 }
 
-.iconText{
+.iconText {
   padding: 1vh;
   font-size: 2vh;
   color: var(--amarillo);
 }
 
+/*                   PAGINA DE CATEGORIAS VERSION MOBILE                    */
 
-/*PAGINA DE CATEGORIAS VERSION MOBILE*/
 .categoryHeader {
   margin: 1.5vh;
 }
@@ -192,34 +172,32 @@ footer button {
 
 .eventTitle {
   font-size: 3.5vh;
-  text-align: center;
   color: var(--verde);
+  margin-left: 5vw;
   margin-bottom: 1vh;
 }
 
-.imageSpan{
+.imageSpan {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.imageEventCard{
+.imageEventCard {
   border-radius: 7vh;
-  width: 300px;
-  height: 250px;
-  object-fit: cover;
+  width: 90vw;
+  height: 40vh;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.buttonCapacityContainer{
+.buttonCapacityContainer {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   margin-top: 2vh;
-  margin-right: 21vw;
+  margin-right: 7vw;
   margin-bottom: 7vh;
 }
-
 
 p.numberCapacity {
   margin-right: 3vh;
@@ -257,10 +235,10 @@ p.numberCapacity {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/***"DESKTOP RESPONSIVE"****/
+/***                      "DESKTOP RESPONSIVE"                   ****/
 
-@media screen and (min-width: 768px) {
-  .logo{
+@media screen and (min-width: 700px) {
+  .logo {
     padding: 7vh;
   }
 
@@ -269,10 +247,12 @@ p.numberCapacity {
     flex-direction: column;
     width: 100%;
     height: 65vh;
-    background-color: var(--amarillo);
+    background-image: url("https://picsum.photos/200/400");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
-  .sloganMobile{
+  .sloganMobile {
     display: none;
   }
 
@@ -283,14 +263,14 @@ p.numberCapacity {
     font-size: 12vh;
   }
 
-  .descriptiveTextMobile{
+  .descriptiveTextMobile {
     display: none;
   }
 
-  .descriptiveTextDesktop{
+  .descriptiveTextDesktop {
     padding-bottom: 20vh;
     text-align: center;
-    font-family: 'DM Sans', sans-serif;
+    font-family: "DM Sans", sans-serif;
     color: var(--verde);
     font-size: 7vh;
     text-align: center;
@@ -304,38 +284,36 @@ p.numberCapacity {
     margin-top: 30vh;
   }
 
-  section h2 {
-    font-size: 45px;
-  }
-
   .options-section {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     align-content: center;
     padding: 0px;
     margin-top: 4vh;
-    width: 70vw;
+    width: 40vw;
   }
-
 
   .options {
     align-self: center;
-    width: 280px;
-    padding: 10px;
+    width: 220px;
+    padding: 50px;
     margin-top: 0px;
-    margin-bottom: 75px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 15px;
   }
 
-  .categoryDesktopContainer{
+  .categoryDesktopContainer {
     display: flex;
     flex-direction: column;
   }
 
+  section h2 {
+    font-size: 45px;
+  }
 
-
-  /*CATEGORÍA DESKTOP*/
+  /*                CATEGORÍA DESKTOP             */
 
   .categoryHeader {
     margin: 1.5vh;
@@ -343,11 +321,10 @@ p.numberCapacity {
 
   .categoryTitle {
     letter-spacing: 0.3vh;
-    font-size: 8vh;
+    font-size: 6vh;
     text-align: center;
     color: var(--verde);
     padding-bottom: 0px;
-  
   }
 
   .eventCard {
@@ -361,23 +338,11 @@ p.numberCapacity {
     text-align: center;
   }
 
-  .imageEventCard {
-    width: 400px;
-    height: 300;
-  }
-
-  .buttonCapacityContainer {
-    display: flex;
-    justify-content: center;
-    margin-left: 330px;
-  }
-
-
   .copyRight {
     display: flex;
     justify-content: center;
     padding: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
   }
 
   .homeHeader {
@@ -387,9 +352,8 @@ p.numberCapacity {
     height: 72vh;
     margin-left: 0%;
     margin-right: 0%;
-    background-color: var(--amarillo);
+    background-color: white;
   }
-
 
   .logo {
     margin-top: 4vh;
@@ -403,54 +367,32 @@ p.numberCapacity {
     display: none;
   }
 
-  .mainMenu{
+  .mainMenu {
     display: none;
   }
 
-  footer p{
+  footer p {
     padding-bottom: 8vh;
   }
 }
 
+/*        PAGE IN PROGRESS          */
 
-/*PAGE IN PROGRESS*/
-
-.backgroundInProgress{
+.backgroundInProgress {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.logoInProgress{
+.logoInProgress {
   padding-top: 10vh;
   padding-bottom: 3vh;
-  
 }
 
-.textInProgress{
+.textInProgress {
   font-size: 4vh;
   text-align: center;
   padding-bottom: 5vh;
   color: var(--verde);
-}
-
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-ul {
-  marker: none;
-  display: flex;
-}
-
-#help {
-  position: absolute;
-}
-
-footer {
-  display: fixed;
 }
