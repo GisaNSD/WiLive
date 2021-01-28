@@ -17,18 +17,18 @@
         <a href="{{route('home')}}">
             <i class="fas fa-arrow-circle-left downArrow"></i>
         </a>
-        <h1 class="categoryTitle">APRENDE</h1>
+        <h1 class="categoryTitle">{{$event->category}}</h1>
     </header>
 
     <main>        
-        <h5 class="eventTitle">Título evento</h5>
+        <h5 class="eventTitle">{{$event->title}}</h5>
 
         <span class="imageSpan">
             <img class="imageEventCard" src="https://picsum.photos/200/200" alt="">
         </span>
         
         <div class="buttonCapacityContainer">
-            <p class="numberCapacity">2/5<p>
+            <p class="numberCapacity">{{$event->title}}<p>
             <button class="enterButton">Entrar</button>
         </div>
     
