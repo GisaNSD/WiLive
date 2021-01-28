@@ -5,8 +5,10 @@ namespace Tests\Feature;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
+use App\Models\Event;
+use App\Models\User;
 
-class EventDetails extends TestCase
+class EventTest extends TestCase
 {
     use RefreshDatabase;
     /**
@@ -17,11 +19,11 @@ class EventDetails extends TestCase
      public function test_I_can_add_Events_in_db()
     {
         $user = User::factory()->create();
-        EventDetails::factory()->create(['user_id' => $user->id]);
+        Event::factory()->create(['user_id' => $user->id]);
         
         $result = $user->EventDetails()->get('title');
 
-        $this->assertDatabaseCount('event_details', 1);
-        $this->assertDatabaseHas('event_details', ['title' => $result[0]->position]);
+        $this->assertDatabaseCount('event', 1);
+        $this->assertDatabaseHas('event', ['title' => $result[0]->position]);
     }
 }

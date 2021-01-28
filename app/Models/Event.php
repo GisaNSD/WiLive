@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class EventDetails extends Model
+class Event extends Model
 {
     use HasFactory;
 
@@ -19,7 +19,7 @@ class EventDetails extends Model
 
     public function users()
     {
-        return $this->belongsTo(User::Class);
+        return $this->belongsToMany(User::class);
     }
 
    
