@@ -22,11 +22,12 @@ class EventFactory extends Factory
     public function definition()
     {
         return [
-            'title' => $this->faker->text(25),
+            'title' => $this->faker->text(30),
             'description' => $this->faker->text(50),
+            'teacher' => $this->faker->text(20),
+            'capacity' => $this->faker->numberBetween(10,20),
             'type' => $this->faker->text(20),
-            'category' => $this->faker->text(25),
-            'user_id' => $this->faker->numberBetween(1),
+            'link' => $this->faker->text(20),
         ];
     }
 }
