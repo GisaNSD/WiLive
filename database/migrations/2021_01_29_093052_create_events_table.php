@@ -13,14 +13,14 @@ class CreateEventsTable extends Migration
      */
     public function up()
     {
-        Schema::create('event', function (Blueprint $table) {
+        Schema::create('events', function (Blueprint $table) {
             $table->id();
             $table->string('title')->nullable();
             $table->text('description');
-            $table->integer('capacity');
             $table->string('teacher');
-            // $table->url('image');
-            $table->timestamp('added_on');
+            $table->integer('capacity');
+            $table->string('type')->nullable();
+            $table->string('link');
             $table->timestamps();
         });
     }
@@ -32,6 +32,6 @@ class CreateEventsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('event');
+        Schema::dropIfExists('events');
     }
 }
