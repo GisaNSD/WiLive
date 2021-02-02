@@ -7,9 +7,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/popUp.css">
     <script src="https://kit.fontawesome.com/b1ccc03917.js" crossorigin="anonymous"></script>
     
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat:wght@400&display=swap" rel="stylesheet">
+
+ 
+
+ 
 </head>
 <body>
 
@@ -29,7 +34,18 @@
         
         <div class="buttonCapacityContainer">
             <p class="numberCapacity">2/5<p>
-            <button class="enterButton">Entrar</button>
+            <button class="enterButton" onclick="popUp()">Entrar </button>
+                <div class="enterButton1" id="myPopup">
+                    <span>Normas</span>
+                    <span>Trata al resto de usuarios con respeto, no se permitirá el uso de lenguaje ofensivo</span>
+                    <span>No está permitido ningún tipo de insinuación de caracter sexual</span>
+                    <span>El no cumplimiento de las normas anteriores, supondrá la eliminación inmediata del perfil</span>
+                    <div class="buttons">
+                        <button type="button" class="cancelar">Cancelar</button>
+                        <button type="button" class="aceptar">Aceptar</button>
+                    </div>   
+                </div>    
+           
         </div>
     
         <button class="createButton">Crear Sala</button>
@@ -61,5 +77,7 @@
     </nav> 
 </footer>
     
+<script src="/js/app.js'"></script>
+
 </body>
 </html>
