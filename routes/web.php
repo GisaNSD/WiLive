@@ -2,7 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
-
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\UserController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,7 +15,9 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', [HomeController::class, 'index'])->name('home');
+
+Route::get('/home', function () {
     return view('home');
 })->name('home');
 
@@ -44,5 +47,7 @@ Route::get('/profile', function () {
 
 Auth::routes();
 
-Route::get('/profile', [App\Http\Controllers\HomeController::class, 'index'])->name('profile');
+Route::get('/perfil', function() {
+    return view('profile');
+})->name('')->middleware();
 // Route::get('users', 'UserController@index');

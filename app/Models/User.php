@@ -24,8 +24,6 @@ class User extends Authenticatable
         'isAdmin',
     ];
 
-    protected $table='wilive_db'; 
-
     /**
      * The attributes that should be hidden for arrays.
      *
