@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <img class="rounded mx-auto d-block logo" src="../imagenes/logo-primary.svg" alt="logo">
+    <img class="rounded mx-auto d-block logoLogin" src="../imagenes/logo-primary.svg" alt="logo">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <form method="POST" action="{{ route('register') }}">
@@ -41,9 +41,6 @@
                     <input id="password-confirm" type="password" placeholder="********" class="form-control" name="password_confirmation" required autocomplete="new-password">
                 </div>
                 <div class="buttons-container">
-                    <button type="submit" class="button-back">
-                        {{ __('Atrás') }}
-                    </button>
                     <button type="submit" class="button-access">
                         {{ __('Registrar') }}
                     </button>

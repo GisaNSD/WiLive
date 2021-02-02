@@ -12,6 +12,7 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="https://kit.fontawesome.com/b1ccc03917.js" crossorigin="anonymous"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -26,11 +27,11 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="containerLoginRegister">
     @guest
         @if (Route::has('login'))
             <a href="{{ route('login') }}">            
-            <button class="enterButton" href="{{ route('login') }}">
+            <button class="LogRegbutton" href="{{ route('login') }}">
             {{ __('Login') }}
             </button>
             </a>
@@ -41,7 +42,7 @@
         @if (Route::has('register'))
                             
             <a href="{{ route('register') }}">
-            <button class="enterButton">
+            <button class="LogRegbutton">
             {{ __('Register') }}
             </button>
             </a>
@@ -66,12 +67,10 @@
             @yield('content')
         </main>
     </div>
-<footer>
-    <a href="{{''}}">
-        <button id="help">Cerrar Sesión</button>
-    </a>
 
-    <p class="copyRight">Design with <span class="heart">❤</span> by echoteam</p>
+<footer>
+
+    <p class="copyRight">Design with <span class="heart"> ❤ </span> by echoteam</p>
 
     <nav class="mainMenu">
         <ul class="iconMenu">

@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <img class="rounded mx-auto d-block logo" src="../imagenes/logo-primary.svg" alt="logo">
+    <img class="logoLogin" src="../imagenes/logo-primary.svg" alt="logo">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <form method="POST" action="{{ route('login') }}">
@@ -34,10 +34,6 @@
                 </div>
     
                 <div class="buttons-container">
-                    
-                        <button role="button" href="{{ route('home') }}"class="button-back">
-                            {{ __('Atrás') }}
-                        </button>
                   
                         <button type="submit" class="button-access">
                             {{ __('Acceder') }}
