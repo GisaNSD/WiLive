@@ -41,13 +41,9 @@ Route::get('/te-ayudamos', function () {
     return view('pageInProgress');
 })->name('te-ayudamos');
 
-Route::get('/profile', function () {
-    return view('profile');
-})->name('profile');
-
 Auth::routes();
 
 Route::get('/perfil', function() {
     return view('profile');
-})->name('')->middleware();
+})->name('perfil')->middleware('auth');
 // Route::get('users', 'UserController@index');
