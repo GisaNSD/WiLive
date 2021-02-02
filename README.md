@@ -3,6 +3,7 @@ Clonar repositorio
 Moverte a dentro de la carpeta: cd WILIVE-MAIN
 Composer install
 npm install
+Composer require laravel/ui
 Abrir Apache en Xampp (ojo!: el antivirus puede bloquear a Xampp!!)
 CAMBIAR file: '.env.example' a '.env'
 php artisan key: generate
