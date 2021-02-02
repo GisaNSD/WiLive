@@ -24,6 +24,6 @@ class EventTest extends TestCase
         $result = $user->EventDetails()->get('title');
 
         $this->assertDatabaseCount('event', 1);
-        $this->assertDatabaseHas('event', ['title' => $result[0]->position]);
+        $this->assertDatabaseHas('event', ['title' => $result[1]->position]);
     }
 }

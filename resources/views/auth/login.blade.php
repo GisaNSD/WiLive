@@ -32,13 +32,16 @@
                     </a>
                     @endif
                 </div>
+    
                 <div class="buttons-container">
-                    <button type="submit" class="button-back">
-                        {{ __('Atrás') }}
-                    </button>
-                    <button type="submit" class="button-access">
-                        {{ __('Acceder') }}
-                    </button>
+                    
+                        <button role="button" href="{{ route('home') }}"class="button-back">
+                            {{ __('Atrás') }}
+                        </button>
+                  
+                        <button type="submit" class="button-access">
+                            {{ __('Acceder') }}
+                        </button>
                 </div>
             </form>
         </div>

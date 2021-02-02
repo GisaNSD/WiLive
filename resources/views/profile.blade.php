@@ -23,18 +23,18 @@
 <img class="profilePic" src="https://picsum.photos/id/1/200/300" alt="profile picture">
 </div>
 
-<form action="create_profile" class="profileInfo">
-    <input type="text" placeholder="Nombre y Apellidos">
-    <input type="text" placeholder="Correo">
-    <input type="password" placeholder="Contraseña">
-    <!-- <input type="text" placeholder="Intereses"> -->
-</form>
-
-
 <footer>
-    <a href="{{''}}">
-        <button id="help">Cerrar Sesión</button>
+    <a href="#" role="button">                   
+        <button class="createButton" href="{{ route('logout') }}" onclick="event.preventDefault();
+            document.getElementById('logout-form').submit();">
+                {{ __('Logout') }}
+        </button>
     </a>
+
+    
+    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                @csrf
+    </form>
 
     <p class="copyRight">Design with <span class="heart">❤</span> by echoteam</p>
 

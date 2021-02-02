@@ -23,14 +23,14 @@ class UserTest extends TestCase
         $this->assertDatabaseCount('users', 1);
         $this->assertDatabaseHas('users', ['name' => $user->name]);
     }
-    public function test_exists_pivot_table()
-    {
-        $user = User::factory()->create();
-        $event = Event::factory()->create();
+    // public function test_exists_pivot_table()
+    // {
+    //     $user = User::factory()->create();
+    //     $event = Event::factory()->create();
 
-        $user->events()->attach([$user->id]);
-        $event->users()->attach([$event->id]);
+    //     $user->events()->attach([$user->id]);
+    //     $event->users()->attach([$event->id]);
 
-        $this->assertDatabaseHas('users_event',[1,1]);
-    }
+    //     $this->assertDatabaseHas('users_event',[1,1]);
+    // }
 }

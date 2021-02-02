@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
@@ -22,6 +23,8 @@ class User extends Authenticatable
         'password',
         'isAdmin',
     ];
+
+    protected $table='wilive_db'; 
 
     /**
      * The attributes that should be hidden for arrays.
@@ -47,5 +50,13 @@ class User extends Authenticatable
     {
         return $this->belongsToMany(Event::class);
     
+    }
+
+    public function index()
+    {
+        $users = DB::all();
+        $users->get();
+
+        
     }
 }
