@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\EventController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -42,9 +44,14 @@ Route::get('/profile', function () {
     return view('profile');
 })->name('profile');
 
-Route::get('/createevent', function () {
-    return view('createevent');
-})->name('createevent');
+
+    // create event routes
+Route::get('/createEvent', function () {
+    return view('createEvent');
+})->name('createEvent');
+
+Route::resource('events', EventController::class);
+// puede ser resource
 
 Auth::routes();
 
