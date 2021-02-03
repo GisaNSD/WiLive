@@ -26,6 +26,10 @@ Route::get('/Debate', [EventController::class, 'index'])->name('debate');
 
 Route::get('/Come', [EventController::class, 'index'])->name('come');
 
+Route::get('/Sala', function(){
+    return view('rooms');
+})->name('sala');
+
 Route::get('/te-ayudamos', function () {
     return view('pageInProgress');
 })->name('te-ayudamos');

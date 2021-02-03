@@ -17,10 +17,11 @@
         <a href="{{route('home')}}">
             <i class="fas fa-arrow-circle-left downArrow"></i>
         </a>
-        <h1 class="categoryTitle">{{$_SERVER["PHP_SELF"]}}</h1>
+        <h1 class="categoryTitle">{{$_SERVER["PATH_INFO"]}}</h1>
     </header>
 
     @foreach($eventos as $evento)
+        @if("/$evento->type" == $_SERVER["PATH_INFO"]):
             <main>        
                 <h5 class="eventTitle">{{$evento->title}}</h5>
 
@@ -30,11 +31,14 @@
                 
                 <div class="buttonCapacityContainer">
                     <p class="numberCapacity">{{$evento->capacity}} personas<p>
-                    <button class="enterButton">Entrar</button>
+                    <a href=>
+                        <button class="enterButton">Entrar</button>
+                    </a>
                 </div>
             
                 <button class="createButton">Crear Sala</button>
             </main>
+        @endif
     @endforeach
 
     <footer>
