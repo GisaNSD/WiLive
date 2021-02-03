@@ -15,7 +15,7 @@ class EventController extends Controller
      */
     public function index()
     {
-        return view('categoria');
+        Event::all();
     }
 
     /**
@@ -25,7 +25,7 @@ class EventController extends Controller
      */
     public function create()
     {
-        return view('createEvent');
+        // return view('createEvent');
     }
 
     /**
@@ -36,15 +36,17 @@ class EventController extends Controller
      */
     public function store(Request $request)
     {
-        $this->$request->validate([
-            'title' => 'required',
-            'description' => 'required'
-        ]);
+        // $this->$request->validate([
+        //     'title' => 'required',
+        //     'description' => 'required'
+        // ]);
+
+        // Event::create($request->all());
+
+        // return redirect()->route('aprende');
 
         Event::create($request->all());
-
-        return redirect()->route('aprende');
-
+        return view('home');
     }
 
     /**
@@ -55,7 +57,7 @@ class EventController extends Controller
      */
     public function show(Event $event)
     {
-        return view('event.show', compact('event'));
+        // return view('event.show', compact('event'));
     }
 
     /**
@@ -66,7 +68,7 @@ class EventController extends Controller
      */
     public function edit(User $user, Event $event)
     {
-        return view('event.edit', compact('event'));
+        // return view('event.edit', compact('event'));
     }
 
     /**
@@ -90,8 +92,8 @@ class EventController extends Controller
     public function destroy(Event $event)
     {
 
-        $event->delete();
-        return redirect()->route('event.index');
+        // $event->delete();
+        // return redirect()->route('event.index');
         
     }
 }

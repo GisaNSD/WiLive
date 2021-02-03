@@ -13,16 +13,16 @@ class CreateEventTable extends Migration
      */
     public function up()
     {
-        Schema::create('event_details', function (Blueprint $table) {
+        Schema::create('events', function (Blueprint $table) {
             $table->id();
            
             $table->string("title");
             $table->text("description");
-            $table->string("type");
-            $table->string("category");
+            // $table->string("type");
+            // $table->string("category");
             $table->timestamps();
-            $table->unsignedBigInteger('user_id');
-            $table->string("link")->nullable();
+            // $table->unsignedBigInteger('user_id');
+            // $table->string("link")->nullable();
         });
     }
 

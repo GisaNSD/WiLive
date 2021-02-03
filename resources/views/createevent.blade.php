@@ -13,18 +13,18 @@
                     </div>
                     @endif
 
-                    <form action="/createEvent" method="POST" enctype="multipart/form-date">
+                    <form action="" method="POST" enctype="multipart/form-date">
                         <div class="form-group">
                             <label>Título</label>
-                            <input type="text" placeholder="Título" name="title" class="form-control" required></input>
+                            <input type="text" placeholder="Título" name="title" class="form-control" require></input>
                         </div>
-                        <div class="form-group select-image">
+                        <!-- <div class="form-group select-image">
                             <label>Imagen</label>
                             <input class="input-image" type="file" name="file"></input>
-                        </div>
+                        </div> -->
                         <div class="form-group">
                             <label>Descripción</label>
-                            <textarea name="body" rows="6" class="form-control" required></textarea>
+                            <textarea name="description" rows="6" class="form-control" require></textarea>
                         </div>
                         <div class="buttons-container">
                             @csrf

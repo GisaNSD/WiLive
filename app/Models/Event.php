@@ -15,36 +15,36 @@ class Event extends Model
         'description'
     ];
 
-    public function index()
-    {
-        //
-    }
-
-
-    // public function create()
+    // public function index()
     // {
     //     //
     // }
 
-    public function show()
-    {
-        //
-    }
 
-    public function edit()
-    {
-        //
-    }
+    // // public function create()
+    // // {
+    // //     //
+    // // }
 
-    // public function update()
+    // public function show()
     // {
     //     //
     // }
 
-    public function delete()
-    {
-        //
-    }
+    // public function edit()
+    // {
+    //     //
+    // }
+
+    // // public function update()
+    // // {
+    // //     //
+    // // }
+
+    // public function delete()
+    // {
+    //     //
+    // }
 
 
 

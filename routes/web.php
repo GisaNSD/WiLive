@@ -50,7 +50,7 @@ Route::get('/createEvent', function () {
     return view('createEvent');
 })->name('createEvent');
 
-Route::resource('events', EventController::class);
+Route::post('/createEvent', [App\Http\Controllers\EventController::class, 'store']);
 // puede ser resource
 
 Auth::routes();
