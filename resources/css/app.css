@@ -1,5 +1,7 @@
 @import 'profile.css';
 @import 'loginreg.css';
+@import 'rooms.css';
+
 * {
   margin: 0;
   padding: 0;

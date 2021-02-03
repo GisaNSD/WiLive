@@ -31,7 +31,7 @@
                 
                 <div class="buttonCapacityContainer">
                     <p class="numberCapacity">{{$evento->capacity}} personas<p>
-                    <a href=>
+                    <a href="{{ route('sala')}}">
                         <button class="enterButton">Entrar</button>
                     </a>
                 </div>
