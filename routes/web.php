@@ -47,3 +47,6 @@ Route::get('/perfil', function() {
     return view('profile');
 })->name('perfil')->middleware('auth');
 // Route::get('users', 'UserController@index');
+Route::get('/faq', function () {
+    return view('faq');
+})->name('faq');

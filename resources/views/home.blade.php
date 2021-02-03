@@ -73,7 +73,7 @@
 </section>
 
 <footer>
-    <a href="{{'te-ayudamos'}}">
+    <a href="{{route('faq')}}">
         <button id="help">Te ayudamos</button>
     </a>
 
