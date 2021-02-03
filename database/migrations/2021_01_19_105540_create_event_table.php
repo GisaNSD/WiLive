@@ -18,7 +18,8 @@ class CreateEventTable extends Migration
            
             $table->string("title");
             $table->text("description");
-            $table->string("category")->default('aprende');
+            $table->string("category")->default('come');
+            $table->tinyInteger("capacity")->default('5');
             $table->timestamps();
             // $table->unsignedBigInteger('user_id');
             $table->string("link")->nullable();

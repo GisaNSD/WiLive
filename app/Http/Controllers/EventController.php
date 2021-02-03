@@ -16,7 +16,7 @@ class EventController extends Controller
      */
     public function index()
     {
-        $events = DB::table('events')->where('category','aprende');
+        $events = DB::table('events')->where('category')->all();
         // $events = Event::where('category', 'aprende');
         return view('categoria',['events'=>$events]);
 
@@ -29,7 +29,7 @@ class EventController extends Controller
      */
     public function create()
     {
-        // return view('createEvent');
+        return view('createEvent');
     }
 
     /**
@@ -54,7 +54,8 @@ class EventController extends Controller
         $event = Event::create([
             "title" => $request->title,
             "description" => $request->description,
-            "category" => $request->category
+            "category" => $request->category,
+            "capacity" => $request->capacity
         ]);
         $event->save();
         return view('home');
@@ -79,7 +80,7 @@ class EventController extends Controller
      */
     public function edit(User $user, Event $event)
     {
-        return view('event.edit', compact('event'));
+        return view('createEvent', compact('event'));
     }
 
     /**

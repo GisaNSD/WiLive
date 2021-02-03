@@ -37,6 +37,11 @@
                             <label>Descripción</label>
                             <textarea name="description" rows="6" class="form-control" require></textarea>
                         </div>
+
+                        <div class="form-group">
+                            <label>Capacidad</label>
+                            <input type="numbers" placeholder="Número de participantes" name="capacity" class="form-control" require></input>
+                        </div>
                         <div class="buttons-container">
                             @csrf
 

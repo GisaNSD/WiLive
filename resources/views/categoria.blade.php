@@ -25,14 +25,14 @@
                     <!-- TARJETAS -->
     <main>  
         
-        <h5 class="eventTitle">Título evento</h5>
+        <h5 class="eventTitle">{{ _GET($events->'title' )}}</h5>
 
         <span class="imageSpan">
             <img class="imageEventCard" src="https://picsum.photos/200/200" alt="">
         </span>
         
         <div class="buttonCapacityContainer">
-            <p class="numberCapacity">2/5<p>
+            <p class="numberCapacity">{{ _GET($events->'capacity') }}<p>
             <button class="enterButton">Entrar</button>
         </div>
     

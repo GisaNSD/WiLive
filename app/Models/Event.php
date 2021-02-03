@@ -13,7 +13,8 @@ class Event extends Model
     protected $fillable = [
         'title',
         'description',
-        'category'
+        'category',
+        'capacity'
     ];
 
     // public function index()
