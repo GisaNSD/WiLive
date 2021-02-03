@@ -186,18 +186,31 @@ footer button {
 
 .categoryTitle {
   letter-spacing: 0.3vh;
-  font-size: 8vh;
+  font-size: 10vh;
+  font-weight: bold;
   text-align: center;
   color: var(--verde);
-  padding-top: 3vh;
+  padding-top: 5vh;
   padding-bottom: 5vh;
 }
 
+.textoRelleno{
+  color: var(--amarillo);
+  font-size: 4vh;
+  padding: 15vh 7vh;
+  width: 100%;
+  text-align: center;
+  background-color: #16697a8e;
+}
+
 .eventTitle {
-  font-size: 3.5vh;
+  font-weight: bold;
+  font-size: 5vh;
   text-align: center;
   color: var(--verde);
-  margin-bottom: 1vh;
+  padding: 3vh;
+  background-color: var(--amarillo);
+  margin-bottom: 7vh;
 }
 
 .imageSpan {
@@ -208,8 +221,8 @@ footer button {
 
 .imageEventCard {
   border-radius: 7vh;
-  width: 300px;
-  height: 250px;
+  width: 60vh;
+  height: 35vh;
   object-fit: cover;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -220,14 +233,13 @@ footer button {
   justify-content: flex-end;
   margin-top: 2vh;
   margin-right: 21vw;
-  margin-bottom: 7vh;
+  margin-bottom: 2vh;
 }
 
 p.numberCapacity {
   margin-right: 3vh;
   margin-top: 0.5vh;
   font-size: 5vh;
-  font-weight: bold;
   color: var(--verde);
 }
 

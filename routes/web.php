@@ -18,6 +18,8 @@ use App\Http\Controllers\PerfilController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+
 Route::get('/Aprende', [EventController::class, 'index'])->name('aprende');
 
 Route::get('/Viaja', [EventController::class, 'index'])->name('viaja');
@@ -26,9 +28,6 @@ Route::get('/Debate', [EventController::class, 'index'])->name('debate');
 
 Route::get('/Come', [EventController::class, 'index'])->name('come');
 
-Route::get('/Sala', function(){
-    return view('rooms');
-})->name('sala');
 
 Route::get('/te-ayudamos', function () {
     return view('pageInProgress');
@@ -37,4 +36,7 @@ Route::get('/te-ayudamos', function () {
 Auth::routes();
 
 Route::get('/perfil', [PerfilController::class, 'index'])->name('perfil')->middleware('auth');
+Route::get('/Sala', function(){
+    return view('rooms');
+})->name('sala')->middleware('auth');
 // Route::get('users', 'UserController@index');
