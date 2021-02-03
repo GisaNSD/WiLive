@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Event;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class EventController extends Controller
 {
@@ -15,7 +16,10 @@ class EventController extends Controller
      */
     public function index()
     {
-        Event::all();
+        $events = DB::table('events')->where('category','aprende');
+        // $events = Event::where('category', 'aprende');
+        return view('categoria',['events'=>$events]);
+
     }
 
     /**
@@ -44,8 +48,15 @@ class EventController extends Controller
         // Event::create($request->all());
 
         // return redirect()->route('aprende');
+       
 
-        Event::create($request->all());
+        // Event::create($request->all());
+        $event = Event::create([
+            "title" => $request->title,
+            "description" => $request->description,
+            "category" => $request->category
+        ]);
+        $event->save();
         return view('home');
     }
 
@@ -57,7 +68,7 @@ class EventController extends Controller
      */
     public function show(Event $event)
     {
-        // return view('event.show', compact('event'));
+        return view('event.show', compact('event'));
     }
 
     /**
@@ -68,7 +79,7 @@ class EventController extends Controller
      */
     public function edit(User $user, Event $event)
     {
-        // return view('event.edit', compact('event'));
+        return view('event.edit', compact('event'));
     }
 
     /**
@@ -92,8 +103,8 @@ class EventController extends Controller
     public function destroy(Event $event)
     {
 
-        // $event->delete();
-        // return redirect()->route('event.index');
+        $event->delete();
+        return redirect()->route('event.index');
         
     }
 }

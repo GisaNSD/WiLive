@@ -24,9 +24,7 @@ class EventFactory extends Factory
         return [
             'title' => $this->faker->text(25),
             'description' => $this->faker->text(50),
-            'type' => $this->faker->text(20),
             'category' => $this->faker->text(25),
-            'user_id' => $this->faker->numberBetween(1),
         ];
     }
 }

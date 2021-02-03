@@ -12,7 +12,8 @@ class Event extends Model
 
     protected $fillable = [
         'title',
-        'description'
+        'description',
+        'category'
     ];
 
     // public function index()
@@ -52,8 +53,4 @@ class Event extends Model
     {
         return $this->belongsToMany(User::class);
     }
-
-
-
-
 }

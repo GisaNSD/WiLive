@@ -18,11 +18,10 @@ class CreateEventTable extends Migration
            
             $table->string("title");
             $table->text("description");
-            // $table->string("type");
-            // $table->string("category");
+            $table->string("category")->default('aprende');
             $table->timestamps();
             // $table->unsignedBigInteger('user_id');
-            // $table->string("link")->nullable();
+            $table->string("link")->nullable();
         });
     }
 
@@ -33,6 +32,6 @@ class CreateEventTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('event_details');
+        Schema::dropIfExists('event');
     }
 }

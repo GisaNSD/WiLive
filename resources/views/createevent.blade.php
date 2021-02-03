@@ -23,6 +23,17 @@
                             <input class="input-image" type="file" name="file"></input>
                         </div> -->
                         <div class="form-group">
+                            <label>Categoria</label>
+                                <select id="category" name="category" require>
+                                    <option selected>--</option>
+                                    <option value="Aprende">Aprende</option>
+                                    <option value="Come">Come</option>
+                                    <option value="Viaja">Viaja</option>
+                                    <option value="Debate">Debate</option>
+                                </select>
+                        </div>
+
+                        <div class="form-group">
                             <label>Descripción</label>
                             <textarea name="description" rows="6" class="form-control" require></textarea>
                         </div>

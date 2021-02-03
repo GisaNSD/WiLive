@@ -20,7 +20,11 @@
         <h1 class="categoryTitle">APRENDE</h1>
     </header>
 
-    <main>        
+
+
+                    <!-- TARJETAS -->
+    <main>  
+        
         <h5 class="eventTitle">Título evento</h5>
 
         <span class="imageSpan">
@@ -35,6 +39,9 @@
         <button class="createButton">Crear Sala</button>
     </main>
    
+
+                    <!-- FOOTER -->
+
     <footer>
     <a href="{{'te-ayudamos'}}">
         <button id="help">Te ayudamos</button>
