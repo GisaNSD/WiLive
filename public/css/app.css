@@ -1,3 +1,84 @@
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    color: black;
+    border: 1px solid purple;
+    padding: 10px;
+    margin: auto;
+  }
+  
+  /* The actual popup (appears on top) */
+  .popup .enterButton1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    visibility: hidden;
+    width: 300px;
+    background-color: #ffffff;
+    color: #16697a;
+    border: 1px solid #16697a;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .popup .enterButton1 span {
+    margin: 5px 30px 15px 30px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .cancelar {
+    background-color: #ffd369;
+    border-radius: 28px;
+    width: 120px;
+    color: #16697a;
+    padding: 15px;
+    border: 0.5px solid #16697a;
+    box-shadow: 5px 3px 0.1px 0.1px rgb(22, 105, 122, 0.2);
+  }
+  
+  .aceptar {
+    background-color: #16697a;
+    border-radius: 28px;
+    width: 120px;
+    color: #ffd369;
+    padding: 15px;
+    border: 0.5px solid rgb(22, 105, 122);
+    box-shadow: 5px 3px 0.1px 0.1px rgb(22, 105, 122, 0.2);
+  }
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1.5s;
+    animation: fadeIn 1.5s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 * {
   margin: 0;
   padding: 0;

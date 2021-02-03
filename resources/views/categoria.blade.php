@@ -77,7 +77,7 @@
     </nav> 
 </footer>
     
-<script src="/js/app.js'"></script>
+<script src="{!! mix('./resources/js/popUp.js') !!}"></script>
 
 </body>
 </html>

@@ -1,3 +1,5 @@
+require('inputmask');
+
 
 function popUp() {
     var popup = document.getElementById("myPopup");

@@ -1,5 +1,11 @@
 window._ = require('lodash');
 
+
+function popUp() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
  * to our Laravel back-end. This library automatically handles sending the
