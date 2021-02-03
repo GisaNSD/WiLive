@@ -43,28 +43,28 @@
     <div class="options-section">
         <div class="categoryDesktopContainer">
             <a href="{{route('aprende')}}">
-                <img class="imageMenu" src="https://picsum.photos/200/400" alt="">
+                <img class="imageMenu" src="/imagenes/aprende.jpeg" alt="">
             </a>
             <span class="options">APRENDE</span>
         </div>
 
         <div class="categoryDesktopContainer">
             <a href="{{route('viaja')}}">
-                <img class="imageMenu" src="https://picsum.photos/200/400" alt="">
+                <img class="imageMenu" src="/imagenes/viaja.jpeg" alt="">
             </a>
             <li class="options">VIAJA</li>
         </div>
 
         <div class="categoryDesktopContainer">
             <a href="{{route('debate')}}">
-                <img class="imageMenu" src="https://picsum.photos/200/400" alt="">
+                <img class="imageMenu" src="/imagenes/debate.jpeg" alt="">
             </a>
             <li class="options">DEBATE</li>
         </div>
 
         <div class="categoryDesktopContainer">
             <a href="{{route('come')}}">
-                <img class="imageMenu" src="https://picsum.photos/200/400" alt="">
+                <img class="imageMenu" src="/imagenes/come.jpeg" alt="">
             </a>
             <li class="options">COME</li>
         </div>
