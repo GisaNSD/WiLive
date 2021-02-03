@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Event;
 use Illuminate\Http\Request;
 
-class EventController extends Controller
+class PerfilController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +13,7 @@ class EventController extends Controller
      */
     public function index()
     {
-        $eventos= Event::all();
-        return view('categoria', compact('eventos'));
+        return view('profile');
     }
 
     /**
@@ -42,10 +40,10 @@ class EventController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Event  $event
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Event $event)
+    public function show($id)
     {
         //
     }
@@ -53,10 +51,10 @@ class EventController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Event  $event
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Event $event)
+    public function edit($id)
     {
         //
     }
@@ -65,10 +63,10 @@ class EventController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Event  $event
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Event $event)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -76,10 +74,10 @@ class EventController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Event  $event
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Event $event)
+    public function destroy($id)
     {
         //
     }

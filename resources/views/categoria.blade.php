@@ -17,24 +17,26 @@
         <a href="{{route('home')}}">
             <i class="fas fa-arrow-circle-left downArrow"></i>
         </a>
-        <h1 class="categoryTitle">APRENDE</h1>
+        <h1 class="categoryTitle">{{$_SERVER["PHP_SELF"]}}</h1>
     </header>
 
-    <main>        
-        <h5 class="eventTitle">HOY APRENDEREMOS A JUGAR</h5>
+    @foreach($eventos as $evento)
+            <main>        
+                <h5 class="eventTitle">{{$evento->title}}</h5>
 
-        <span class="imageSpan">
-            <img class="imageEventCard" src="https://picsum.photos/200/200" alt="">
-        </span>
-        
-        <div class="buttonCapacityContainer">
-            <p class="numberCapacity">12 personas<p>
-            <button class="enterButton">Entrar</button>
-        </div>
-    
-        <button class="createButton">Crear Sala</button>
-    </main>
-   
+                <span class="imageSpan">
+                    <img class="imageEventCard" src="https://picsum.photos/200/200" alt="">
+                </span>
+                
+                <div class="buttonCapacityContainer">
+                    <p class="numberCapacity">{{$evento->capacity}} personas<p>
+                    <button class="enterButton">Entrar</button>
+                </div>
+            
+                <button class="createButton">Crear Sala</button>
+            </main>
+    @endforeach
+
     <footer>
     <a href="{{'te-ayudamos'}}">
         <button id="help">Te ayudamos</button>

@@ -3,7 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\PerfilController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,25 +18,13 @@ use App\Http\Controllers\UserController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::get('/home', function () {
-    return view('home');
-})->name('home');
+Route::get('/Aprende', [EventController::class, 'index'])->name('aprende');
 
-Route::get('/aprende', function () {
-    return view('categoria');
-})->name('aprende');
+Route::get('/Viaja', [EventController::class, 'index'])->name('viaja');
 
-Route::get('/viaja', function () {
-    return view('pageInProgress');
-})->name('viaja');
+Route::get('/Debate', [EventController::class, 'index'])->name('debate');
 
-Route::get('/debate', function () {
-    return view('pageInProgress');
-})->name('debate');
-
-Route::get('/come', function () {
-    return view('pageInProgress');
-})->name('come');
+Route::get('/Come', [EventController::class, 'index'])->name('come');
 
 Route::get('/te-ayudamos', function () {
     return view('pageInProgress');
@@ -43,7 +32,5 @@ Route::get('/te-ayudamos', function () {
 
 Auth::routes();
 
-Route::get('/perfil', function() {
-    return view('profile');
-})->name('perfil')->middleware('auth');
+Route::get('/perfil', [PerfilController::class, 'index'])->name('perfil')->middleware('auth');
 // Route::get('users', 'UserController@index');
