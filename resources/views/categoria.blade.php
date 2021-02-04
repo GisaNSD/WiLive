@@ -70,9 +70,5 @@
         </ul>
     </nav>
 </footer>
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/moiPictures
 </body>
 </html>

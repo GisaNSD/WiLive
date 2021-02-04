@@ -48,6 +48,8 @@ Auth::routes();
 
 Route::get('/perfil', [PerfilController::class, 'index'])->name('perfil')->middleware('auth');
 
+Route::resource('user.show', PerfilController::class);
+
 Route::get('/Sala', function(){
     return view('rooms');
 })->name('sala')->middleware('auth');
