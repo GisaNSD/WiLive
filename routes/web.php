@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\PerfilController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -33,10 +34,19 @@ Route::get('/te-ayudamos', function () {
     return view('pageInProgress');
 })->name('te-ayudamos');
 
+Route::get('/createEvent', function () {
+    return view('createEvent');
+})->name('createEvent')->middleware('auth');
+
+Route::post('/createEvent', [App\Http\Controllers\EventController::class, 'store'])->name('event')->middleware('auth');
+Route::get('/createEvent/{$id}', [App\Http\Controllers\EventController::class, 'edit'])->name('editEvent')->middleware('auth');
+Route::put('/createEvent/{$id}', [App\Http\Controllers\EventController::class, 'update'])->name('updateEvent')->middleware('auth');
+Route::delete('/createEvent/{$id}', [App\Http\Controllers\EventController::class, 'delete'])->name('deleteEvent')->middleware('auth');
+
+
 Auth::routes();
 
 Route::get('/perfil', [PerfilController::class, 'index'])->name('perfil')->middleware('auth');
 Route::get('/Sala', function(){
     return view('rooms');
 })->name('sala')->middleware('auth');
-// Route::get('users', 'UserController@index');

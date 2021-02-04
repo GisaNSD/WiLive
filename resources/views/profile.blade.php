@@ -22,6 +22,10 @@
 <div class="picture">
 <img class="profilePic" src="https://picsum.photos/id/1/200/300" alt="profile picture">
 </div>
+<div class="profileContenedor">
+        <p>Nombre:</p>
+        <p>Correo electrónico:</p>
+</div>
 
 <footer>
     <a href="#" role="button">                   

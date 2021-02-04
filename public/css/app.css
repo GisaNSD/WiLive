@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat:wght@300;400&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat:wght@300;400&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat:wght@300;400&display=swap);
 * {
   font-family: "DM Sans", "sans-serif";
   font-size: 20px;
@@ -298,19 +299,46 @@ div#videos > video {
 }
 }
 * {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  color: #16697a;
+}
+
+:root {
+  --primary: #16697a;
+  --secondary: #ffd369;
+  --terciary: #ffffff;
+}
+
+.header-title {
+  font-size: 28px;
+  text-align: center;
+}
+
+.select-image {
+  flex-wrap: wrap;
+}
+
+.buttonBack{
+  margin: 4vh;
+}
+
+
+
+* {
   margin: 0;
   padding: 0;
   list-style-type: none;
   text-decoration: none;
 }
 
-:root {
-  --verde: #16697A;
-  --amarillo: #FFD369;
-}
-
 ::-webkit-scrollbar {
   display: none;
+}
+
+:root {
+  --verde: #16697a;
+  --amarillo: #ffd369;
 }
 
 body {
@@ -369,16 +397,10 @@ body {
   font-size: 6vh;
 }
 
-#vidaOnline {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 section h2 {
   margin: 6vh;
   margin-bottom: 10vh;
-  font-size: 5vh;
+  font-size: 6.5vh;
   text-align: center;
   color: var(--verde);
 }
@@ -415,6 +437,14 @@ section h2 {
   color: var(--verde);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+.imageMenu {
+  border-radius: 3vh;
+  margin-bottom: 0;
+  width: 80vw;
+  max-width: 90vw;
+  height: 30vh;
+} 
 
 footer button {
   padding-top: 0;
@@ -474,7 +504,8 @@ footer button {
   color: var(--amarillo);
 }
 
-/*PAGINA DE CATEGORIAS VERSION MOBILE*/
+
+/*                   PAGINA DE CATEGORIAS VERSION MOBILE                    */
 
 .categoryHeader {
   margin: 1.5vh;
@@ -568,9 +599,33 @@ p.numberCapacity {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/***"DESKTOP RESPONSIVE"****/
+
+.userName{
+  font-size: 6vw;
+  margin: 0;
+  padding: 0;
+}
+
+.cerrarSesionContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 3vh
+}
+
+.logOutButton{
+  font-size: 6vw;
+  color: var(--verde);
+  border: none;
+  background-color:#f8fafc;
+}
+
+
+
+/***                      "DESKTOP RESPONSIVE"                   ****/
 
 @media screen and (min-width: 768px) {
+
   .logo {
     padding: 7vh;
   }
@@ -579,8 +634,12 @@ p.numberCapacity {
     flex-direction: column;
     width: 100%;
     height: 65vh;
-    background-color: var(--amarillo);
+    background-image: url("https://picsum.photos/200/400");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
+
+
   .sloganMobile {
     display: none;
   }
@@ -590,13 +649,15 @@ p.numberCapacity {
     margin: 10vh 5vh;
     font-size: 12vh;
   }
+
   .descriptiveTextMobile {
     display: none;
   }
+
   .descriptiveTextDesktop {
     padding-bottom: 20vh;
     text-align: center;
-    font-family: 'DM Sans', sans-serif;
+    font-family: "DM Sans", sans-serif;
     color: var(--verde);
     font-size: 7vh;
     text-align: center;
@@ -608,37 +669,45 @@ p.numberCapacity {
     justify-content: center;
     margin-top: 30vh;
   }
+
   section h2 {
     font-size: 45px;
   }
+
   .options-section {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     align-content: center;
     padding: 0px;
     margin-top: 4vh;
-    width: 70vw;
+    width: 40vw;
   }
+
   .options {
     align-self: center;
-    width: 280px;
-    padding: 10px;
+    width: 220px;
+    padding: 50px;
     margin-top: 0px;
-    margin-bottom: 75px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 15px;
   }
+
   .categoryDesktopContainer {
     display: flex;
     flex-direction: column;
   }
+
   /*CATEGORÍA DESKTOP*/
+
+
   .categoryHeader {
     margin: 1.5vh;
   }
   .categoryTitle {
     letter-spacing: 0.3vh;
-    font-size: 8vh;
+    font-size: 6vh;
     text-align: center;
     color: var(--verde);
     padding-bottom: 0px;
@@ -652,6 +721,7 @@ p.numberCapacity {
     font-size: 3vh;
     text-align: center;
   }
+
   .imageEventCard {
     width: 400px;
     height: 300;
@@ -661,11 +731,12 @@ p.numberCapacity {
     justify-content: center;
     margin-left: 330px;
   }
+
   .copyRight {
     display: flex;
     justify-content: center;
     padding: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
   }
   .homeHeader {
     display: flex;
@@ -674,8 +745,9 @@ p.numberCapacity {
     height: 72vh;
     margin-left: 0%;
     margin-right: 0%;
-    background-color: var(--amarillo);
+    background-color: white;
   }
+
   .logo {
     margin-top: 10vh;
     
@@ -686,15 +758,17 @@ p.numberCapacity {
   .arrow {
     display: none;
   }
+
   .mainMenu {
     display: none;
   }
+
   footer p {
     padding-bottom: 8vh;
   }
 }
 
-/*PAGE IN PROGRESS*/
+/*        PAGE IN PROGRESS          */
 
 .backgroundInProgress {
   display: flex;
@@ -715,6 +789,7 @@ p.numberCapacity {
   color: var(--verde);
 }
 
+
 header {
   display: flex;
   flex-direction: row;
@@ -730,6 +805,8 @@ ul {
 footer {
   display: fixed;
 }
+
+
 @charset "UTF-8";
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to FirebaseRTC</title>
+    <title>WiLive</title>
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <script src="https://kit.fontawesome.com/b1ccc03917.js" crossorigin="anonymous"></script>
 
@@ -34,6 +34,7 @@
      aria-modal="true"
      aria-labelledby="my-dialog-title"
      aria-describedby="my-dialog-content">
+</div>
 
 <footer>
     <a href="{{'te-ayudamos'}}">

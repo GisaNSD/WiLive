@@ -23,7 +23,7 @@
     <p class="textoRelleno">Compartir, respetar, divertirse, debatir, aprender y mucho más para ti.</p>
 
     @foreach($eventos as $evento)
-        @if("/$evento->type" == $_SERVER["PATH_INFO"])
+        @if("/$evento->category" == $_SERVER["PATH_INFO"])
             <main>        
                 <h5 class="eventTitle">{{$evento->title}}</h5>
 
@@ -40,9 +40,11 @@
             
                 @endif
                 @endforeach
-                <button class="createButton">Crear Sala</button>
-            </main>
-
+        <a href="{{route('createEvent')}}">
+            <button class="createButton">Crear Sala</button>
+        </a>
+    </main>
+   
     <footer>
     <a href="{{'te-ayudamos'}}">
         <button id="help">Te ayudamos</button>

@@ -12,10 +12,8 @@ class Event extends Model
     protected $fillable = [
         'title',
         'description',
-        'teacher',
+        'category',
         'capacity',
-        'type',
-        'link',
     ];
     public function users()
     {

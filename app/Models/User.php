@@ -46,7 +46,7 @@ class User extends Authenticatable
 
     public function event()
     {
-        return $this->belongsToMany(Event::class);
+        return $this->hasMany(Event::class);
     
     }
 
@@ -54,7 +54,5 @@ class User extends Authenticatable
     {
         $users = DB::all();
         $users->get();
-
-        
     }
 }

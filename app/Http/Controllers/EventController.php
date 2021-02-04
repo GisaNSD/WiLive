@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Event;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class EventController extends Controller
 {
@@ -16,6 +18,9 @@ class EventController extends Controller
     {
         $eventos= Event::all();
         return view('categoria', compact('eventos'));
+        // $events = DB::table('events')->where('category')->all();
+        // return view('categoria',['events'=>$events]);
+
     }
 
     /**
@@ -25,7 +30,7 @@ class EventController extends Controller
      */
     public function create()
     {
-        //
+        return view('createEvent');
     }
 
     /**
@@ -36,7 +41,25 @@ class EventController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // $this->$request->validate([
+        //     'title' => 'required',
+        //     'description' => 'required'
+        // ]);
+
+        // Event::create($request->all());
+
+        // return redirect()->route('aprende');
+       
+
+        // Event::create($request->all());
+        $event = Event::create([
+            "title" => $request->title,
+            "description" => $request->description,
+            "category" => $request->category,
+            "capacity" => $request->capacity
+        ]);
+        $event->save();
+        return redirect()->route('home');
     }
 
     /**
@@ -47,7 +70,7 @@ class EventController extends Controller
      */
     public function show(Event $event)
     {
-        //
+        return view('event.show', compact('event'));
     }
 
     /**
@@ -56,9 +79,11 @@ class EventController extends Controller
      * @param  \App\Models\Event  $event
      * @return \Illuminate\Http\Response
      */
-    public function edit(Event $event)
+    public function edit($id)
     {
-        //
+        $event = Event::find($id);
+        $user = User::find($event->user_id);
+        return view('createEvent', compact('event'));
     }
 
     /**
@@ -70,7 +95,17 @@ class EventController extends Controller
      */
     public function update(Request $request, Event $event)
     {
-        //
+        $event = $this->event($request);
+
+        $event->title = $request->title;
+        $event->description = $request->description;
+        $event->category = $request->category;
+        $event->capacity = $request->capacity;
+
+        $event->safe();
+
+        return redirect('/aprende');
+
     }
 
     /**
@@ -79,9 +114,12 @@ class EventController extends Controller
      * @param  \App\Models\Event  $event
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Event $event)
+    public function destroy(Event $event, User $user)
     {
-        //
+       
+        $event = Event::find($event->id);
+        $event->delete();
+        return redirect()->route('event.index');
+        
     }
-
 }

@@ -27,9 +27,9 @@
 </head>
 
 <body>
-    <div class="containerLoginRegister">
     @guest
         @if (Route::has('login'))
+    <div class="containerLoginRegister">
             <a href="{{ route('login') }}">            
             <button class="LogRegbutton" href="{{ route('login') }}">
             {{ __('Login') }}
@@ -46,27 +46,29 @@
             {{ __('Register') }}
             </button>
             </a>
+    </div>
         @endif
+
         @else
-            <a href="#" role="button">
+        <div class="cerrarSesionContainer">
+            <a href="#" class="userName" role="button">
                 {{ Auth::user()->name }}
             </a>
 
                                 
-            <button class="createButton" href="{{ route('logout') }}" onclick="event.preventDefault();
+            <button class="logOutButton" href="{{ route('logout') }}" onclick="event.preventDefault();
                 document.getElementById('logout-form').submit();">
-                    {{ __('Logout') }}
+                    {{ __('Cerrar Sesion') }}
             </button>
 
             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                 @csrf
             </form>
+        </div>
     @endguest
-    </div>
         <main class="py-4">
             @yield('content')
         </main>
-    </div>
 
 <footer>
 
