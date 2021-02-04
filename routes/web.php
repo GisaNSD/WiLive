@@ -28,6 +28,7 @@ Route::get('/Debate', [EventController::class, 'index'])->name('debate');
 
 Route::get('/Come', [EventController::class, 'index'])->name('come');
 
+
 Route::get('/te-ayudamos', function () {
     return view('pageInProgress');
 })->name('te-ayudamos');
@@ -35,4 +36,7 @@ Route::get('/te-ayudamos', function () {
 Auth::routes();
 
 Route::get('/perfil', [PerfilController::class, 'index'])->name('perfil')->middleware('auth');
+Route::get('/Sala', function(){
+    return view('rooms');
+})->name('sala')->middleware('auth');
 // Route::get('users', 'UserController@index');
