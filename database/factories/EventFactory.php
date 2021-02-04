@@ -25,6 +25,7 @@ class EventFactory extends Factory
             'title' => $this->faker->text(25),
             'description' => $this->faker->text(50),
             'category' => $this->faker->text(25),
+            'capacity' => $this->faker->tinyInteger('numbers')(2),
         ];
     }
 }

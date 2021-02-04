@@ -17,38 +17,6 @@ class Event extends Model
         'capacity'
     ];
 
-    // public function index()
-    // {
-    //     //
-    // }
-
-
-    // // public function create()
-    // // {
-    // //     //
-    // // }
-
-    // public function show()
-    // {
-    //     //
-    // }
-
-    // public function edit()
-    // {
-    //     //
-    // }
-
-    // // public function update()
-    // // {
-    // //     //
-    // // }
-
-    // public function delete()
-    // {
-    //     //
-    // }
-
-
 
     public function users()
     {
