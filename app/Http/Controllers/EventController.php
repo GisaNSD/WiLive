@@ -58,7 +58,7 @@ class EventController extends Controller
             "capacity" => $request->capacity
         ]);
         $event->save();
-        return view('home');
+        return redirect()->route('home');
     }
 
     /**
@@ -78,8 +78,10 @@ class EventController extends Controller
      * @param  \App\Models\Event  $event
      * @return \Illuminate\Http\Response
      */
-    public function edit(User $user, Event $event)
+    public function edit($id)
     {
+        $event = Event::find($id);
+        $user = User::find($event->user_id);
         return view('createEvent', compact('event'));
     }
 
@@ -92,7 +94,17 @@ class EventController extends Controller
      */
     public function update(Request $request, Event $event)
     {
-        //
+        $event = $this->event($request);
+
+        $event->title = $request->title;
+        $event->description = $request->description;
+        $event->category = $request->category;
+        $event->capacity = $request->capacity;
+
+        $event->safe();
+
+        return redirect('/aprende');
+
     }
 
     /**
@@ -101,9 +113,10 @@ class EventController extends Controller
      * @param  \App\Models\Event  $event
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Event $event)
+    public function destroy(Event $event, User $user)
     {
-
+       
+        $event = Event::find($event->id);
         $event->delete();
         return redirect()->route('event.index');
         

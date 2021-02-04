@@ -20,10 +20,9 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::get('/aprende', 'EventController@index')->name('aprende');
-// Route::get('/aprende', function () {
-//     return view('categoria');
-// })->name('aprende');
+Route::get('/aprende', function () {
+    return view('categoria');
+})->name('aprende');
 
 
 Route::get('/viaja', function () {
@@ -52,8 +51,10 @@ Route::get('/createEvent', function () {
     return view('createEvent');
 })->name('createEvent');
 
-Route::post('/createEvent', [App\Http\Controllers\EventController::class, 'store']);
-
+Route::post('/createEvent', [App\Http\Controllers\EventController::class, 'store'])->name('event');
+Route::get('/createEvent/{$id}', [App\Http\Controllers\EventController::class, 'edit'])->name('editEvent');
+Route::put('/createEvent/{$id}', [App\Http\Controllers\EventController::class, 'update'])->name('updateEvent');
+Route::delete('/createEvent/{$id}', [App\Http\Controllers\EventController::class, 'delete'])->name('deleteEvent');
 
 Auth::routes();
 
