@@ -108,8 +108,8 @@
 .profilePic {
     border: 0px solid black;
     border-radius: 50%;
-    height: 20vh;
-    width: 20vh ;
+    height: 25vh;
+    width: 40vw ;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -137,6 +137,17 @@ header {
     height: 8vh;
     padding-left: 3vh;
 
+}
+
+.profileContenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3vw;
+}
+
+.opcionProfile{
+    font-weight: bold;
 }
 
 * {
@@ -349,7 +360,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 98vh;
+  height: 95vh;
   margin-left: 0%;
   margin-right: 0%;
   background-color: var(--amarillo);
@@ -362,6 +373,7 @@ body {
   flex-direction: column;
   align-items: center;
   height: 100%;
+  padding-top: 10vh;
   margin-left: 0%;
   margin-right: 0%;
   background-color: var(--amarillo);
@@ -419,9 +431,10 @@ body {
   color: var(--verde);
   font-size: 3vh;
   text-align: center;
-  margin-top: 2vh;
+  margin-top: 7.5vh;
   font-style: italic;
 }
+
 
 .arrowParagraph {
   color: var(--verde);
@@ -507,6 +520,18 @@ footer button {
   text-align: center;
   font-size: 2vh;
   color: var(--amarillo);
+}
+
+.copyRightFaq {
+
+  display:flex;
+  justify-content: center;
+  padding-top: 5vh;
+  padding-bottom: 12vh;
+  text-align: center;
+  font-size: 2vh;
+  color: var(--verde);
+  background-color: var(--amarillo);
 }
 
 .heart {

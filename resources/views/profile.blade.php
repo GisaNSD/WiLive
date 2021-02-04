@@ -15,16 +15,16 @@
         <a href="{{route('home')}}">
             <i class="fas fa-arrow-circle-left downArrow"></i>
         </a>
-        <a href="">
+        <!-- <a href="">
             <i class="fas fa-user-edit downArrow"></i>
-        </a>
+        </a> -->
 </header>
 <div class="picture">
-<img class="profilePic" src="https://picsum.photos/id/1/200/300" alt="profile picture">
+<img class="profilePic" src="/imagenes/usuario.jpg" alt="profile picture">
 </div>
 <div class="profileContenedor">
-        <p>Nombre: {{$user->name}}</p>
-        <p>Correo electrónico:{{$user->email}}</p>
+        <p><span class="opcionProfile">Nombre:</span> {{$user->name}}</p>
+        <p><span class="opcionProfile">Correo electrónico:</span> {{$user->email}}</p>
 </div>
 
 <footer>

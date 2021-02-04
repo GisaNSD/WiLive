@@ -1,8 +1,8 @@
 .profilePic {
     border: 0px solid black;
     border-radius: 50%;
-    height: 20vh;
-    width: 20vh ;
+    height: 25vh;
+    width: 40vw ;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -30,4 +30,15 @@ header {
     height: 8vh;
     padding-left: 3vh;
 
+}
+
+.profileContenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3vw;
+}
+
+.opcionProfile{
+    font-weight: bold;
 }

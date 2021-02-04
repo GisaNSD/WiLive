@@ -14,7 +14,6 @@
 <body>
 
 <header class="homeHeaderFaq">
-
     <a href= "{{route('home')}}">
         <img class="logoFaq" src="/imagenes/Logo.svg" alt="wilive logo">
     </a>
@@ -40,8 +39,7 @@
 
 <footer>
 
-    <p class="copyRight">Design with <span class="heart">❤</span> by echoteam</p>
-
+    <p class="copyRightFaq">Design with <span class="heart">❤</span> by echoteam</p>
     <nav class="mainMenu">
         <ul class="iconMenu">
             <a href="{{ route('home') }}">
