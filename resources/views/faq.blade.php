@@ -51,12 +51,21 @@
                 </li>
             </a>
 
-            <a href="">
+        @if(auth()->user() == null)
+            <a href="{{ route('login') }}">   
+                <li class="liMainMenu">
+                    <i class="fas fa-user iconNav"></i>
+                    <p class="iconText">Login</p>
+                </li>
+            </a> 
+        @else
+        <a href="{{ route('user.show', auth()->user() )}}">   
                 <li class="liMainMenu">
                     <i class="fas fa-user iconNav"></i>
                     <p class="iconText">Perfil</p>
                 </li>
             </a>
+        @endif
         </ul>
     </nav>
 </footer>
