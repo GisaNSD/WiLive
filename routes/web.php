@@ -18,6 +18,8 @@ use App\Http\Controllers\PerfilController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+
 Route::get('/Aprende', [EventController::class, 'index'])->name('aprende');
 
 Route::get('/Viaja', [EventController::class, 'index'])->name('viaja');
