@@ -45,7 +45,7 @@ Aplicación web mobile first para crear y participar en eventos online, desde la
 
 ## Demo 💻
 
-![WiLive](public/images/wilive-demo.gif)
+![WiLive](public/imagenes/wilive-demo.gif)
 
 ## Colaboradores 🏈
 
