@@ -19,16 +19,19 @@
         <img class="logoFaq" src="/imagenes/Logo.svg" alt="wilive logo">
     </a>
 
-    <p class="sloganMobile">Preguntas Frecuentes MOBILE</p>
-    <p class="descriptiveTextMobile">Pregunta 1 mobile</p>
 
+    <p class="sloganMobileFaq">Preguntas Frecuentes</p>
+    <p class="descriptiveTextMobileFaq"><b>¿Cómo puedo acceder a una sala?</b> <br>
+    Tan solo accede a una de las categorías disponibles en la Home de WiLive y accede a la sala que quieras. Recuerda que tendrás que crearte una cuenta antes de acceder.
+</p>
 
-        <p class="sloganDesktop">Preguntas Frecuentes DESKTOP</p>
-        <p class="descriptiveTextDesktop">Pregunta 1 desktop</p>
+<p class="descriptiveTextMobileFaq"><b>¿Puedo crear yo una sala?</b> <br>
+    Sí! Una vez dentro de la categoría que te interese, clicka en el botón 'Crear Sala', podrás crear tus propios streamings temáticos!
+</p>
 
-
-
-
+<p class="descriptiveTextMobileFaq"><b>¿Tengo que tener cuenta para poder acceder a las salas?</b> <br>
+    Si, debes crearte una cuenta para poder acceder y crear salas.
+</p><br>
 
 
 </header>
