@@ -47,6 +47,12 @@ Route::delete('/createEvent/{$id}', [App\Http\Controllers\EventController::class
 Auth::routes();
 
 Route::get('/perfil', [PerfilController::class, 'index'])->name('perfil')->middleware('auth');
+
 Route::get('/Sala', function(){
     return view('rooms');
 })->name('sala')->middleware('auth');
+
+
+Route::get('/faq', function () {
+    return view('faq');
+})->name('faq');

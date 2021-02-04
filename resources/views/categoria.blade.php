@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/app.css">
     <script src="https://kit.fontawesome.com/b1ccc03917.js" crossorigin="anonymous"></script>
-    
+
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -44,9 +44,9 @@
             <button class="createButton">Crear Sala</button>
         </a>
     </main>
-   
+
     <footer>
-    <a href="{{'te-ayudamos'}}">
+    <a href="{{route('faq')}}">
         <button id="help">Te ayudamos</button>
     </a>
 
@@ -54,21 +54,25 @@
 
     <nav class="mainMenu">
         <ul class="iconMenu">
-            <a href="{{ route('home') }}"> 
+            <a href="{{ route('home') }}">
                 <li class="liMainMenu">
                     <i class="fas fa-home iconNav"></i>
                     <p class="iconText">Inicio</p>
                 </li>
             </a>
 
-            <a href="{{ route('perfil') }}">   
+            <a href="{{ route('perfil') }}">
                 <li class="liMainMenu">
                     <i class="fas fa-user iconNav"></i>
                     <p class="iconText">Perfil</p>
                 </li>
             </a>
         </ul>
-    </nav> 
+    </nav>
 </footer>
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/moiPictures
 </body>
 </html>
