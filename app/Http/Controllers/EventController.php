@@ -16,9 +16,8 @@ class EventController extends Controller
      */
     public function index()
     {
-        $events = DB::table('events')->where('category')->all();
-        // $events = Event::where('category', 'aprende');
-        return view('categoria',['events'=>$events]);
+        $eventos = Event::all();
+        return view('categoria',compact('eventos'));
 
     }
 
@@ -40,17 +39,6 @@ class EventController extends Controller
      */
     public function store(Request $request)
     {
-        // $this->$request->validate([
-        //     'title' => 'required',
-        //     'description' => 'required'
-        // ]);
-
-        // Event::create($request->all());
-
-        // return redirect()->route('aprende');
-       
-
-        // Event::create($request->all());
         $event = Event::create([
             "title" => $request->title,
             "description" => $request->description,
@@ -67,9 +55,10 @@ class EventController extends Controller
      * @param  \App\Models\Event  $event
      * @return \Illuminate\Http\Response
      */
-    public function show(Event $event)
+    public function show($id)
     {
-        return view('event.show', compact('event'));
+        $event = Event::find($id);
+        return view('categoria.view', ['data'=>$event]);
     }
 
     /**

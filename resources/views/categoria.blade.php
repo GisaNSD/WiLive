@@ -23,7 +23,7 @@
 
 
                     <!-- TARJETAS -->
-    <main>  
+    <!-- <main>  
         
         <h5 class="eventTitle">Titulo</h5>
 
@@ -39,10 +39,30 @@
         <a href="{{route('createEvent')}}">
             <button class="createButton">Crear Sala</button>
         </a>
-    </main>
+    </main> -->
    
+    @foreach($eventos as $event)
+    <p class="textoRelleno">{{ $event->description }}</p>
 
-                    <!-- FOOTER -->
+        @if("/$event->type" == $_SERVER["PATH_INFO"])
+            <main>        
+                <h5 class="eventTitle">{{ $event->title }}</h5>
+
+                <span class="imageSpan">
+                    <img class="imageEventCard" src="https://picsum.photos/200/200" alt="">
+                </span>
+                
+                <div class="buttonCapacityContainer">
+                    <p class="numberCapacity">{{ $event->capacity }} personas<p>
+                    <a href="{{ route('sala')}}">
+                        <button class="enterButton">Entrar</button>
+                    </a>
+                </div>
+            
+        @endif
+    @endforeach
+                <button class="createButton">Crear Sala</button>
+            </main>
 
     <footer>
     <a href="{{'te-ayudamos'}}">

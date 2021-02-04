@@ -24,7 +24,6 @@ Route::get('/aprende', function () {
     return view('categoria');
 })->name('aprende');
 
-
 Route::get('/viaja', function () {
     return view('pageInProgress');
 })->name('viaja');
@@ -36,6 +35,11 @@ Route::get('/debate', function () {
 Route::get('/come', function () {
     return view('pageInProgress');
 })->name('come');
+
+Route::get('/categoria', function () {
+    return view('categoria');
+})->name('categoria');
+
 
 Route::get('/te-ayudamos', function () {
     return view('pageInProgress');

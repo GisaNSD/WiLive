@@ -84,6 +84,33 @@
             @yield('content')
         </main>
     </div>
+<<<<<<< Updated upstream
+=======
+
+<footer>
+
+    <p class="copyRight">Design with <span class="heart"> ❤ </span> by echoteam</p>
+
+    <nav class="mainMenu">
+        <ul class="iconMenu">
+            <a href="{{ route('home') }}"> 
+                <li class="liMainMenu">
+                    <i class="fas fa-home iconNav"></i>
+                    <p class="iconText">Inicio</p>
+                </li>
+            </a>
+
+            <a href="{{ route('perfil') }}">   
+                <li class="liMainMenu">
+                    <i class="fas fa-user iconNav"></i>
+                    <p class="iconText">Perfil</p>
+                </li>
+            </a>
+        </ul>
+    </nav> 
+</footer>
+
+>>>>>>> Stashed changes
 </body>
 
 </html>
