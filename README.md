@@ -21,26 +21,26 @@ Aplicación web mobile first para crear y participar en eventos online, desde la
 
 ### Instalación de Laravel
 
-1. Clonar repositorio:
+**1. Clonar repositorio:**
   - git clone https://github.com/TeamEchoo/WiLive.git
 
-2. Dentro de la carpeta del repositorio:
+**2. Dentro de la carpeta del repositorio:**
   - composer install
   - npm install
 
-3. Instalación con composer de laravel/ui:
+**3. Instalación con composer de laravel/ui:**
   - composer require laravel/ui
 
-4. Configuración variables de entorno y base de datos en archivo '.env'
+**4. Configuración variables de entorno y base de datos en archivo '.env'**
 
-5. Generar key:
+**5. Generar key:**
   - php artisan key: generate
 
-6. Para que los cambios sean compilados y se puedan visualizar desde el servidor:
+**6. Para que los cambios sean compilados y se puedan visualizar desde el servidor:**
   - npm run dev
   - npm run watch
 
-7. Crear un servidor:
+**7. Crear un servidor:**
   - php artisan serve
 
 ## Demo 💻
