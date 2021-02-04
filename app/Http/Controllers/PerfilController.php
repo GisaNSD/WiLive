@@ -47,7 +47,7 @@ class PerfilController extends Controller
     public function show($id)
     {
         $user= User::find($id);
-        return view('profile', 'user' => $user);
+        return view('profile', ['user' => $user]);
     }
 
     /**

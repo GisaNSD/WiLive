@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <title>Perfil</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/app.css">
@@ -23,8 +23,8 @@
 <img class="profilePic" src="https://picsum.photos/id/1/200/300" alt="profile picture">
 </div>
 <div class="profileContenedor">
-        <p>Nombre:</p>
-        <p>Correo electrónico:</p>
+        <p>Nombre: {{$user->name}}</p>
+        <p>Correo electrónico:{{$user->email}}</p>
 </div>
 
 <footer>
@@ -51,7 +51,7 @@
                 </li>
             </a>
 
-            <a href="{{ route('perfil') }}">   
+            <a href="">   
                 <li class="liMainMenu">
                     <i class="fas fa-user iconNav"></i>
                     <p class="iconText">Perfil</p>

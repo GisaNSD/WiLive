@@ -88,7 +88,7 @@
                 </li>
             </a>
 
-            <a href="{{ route('user.show') }}">   
+            <a href="{{ route('user.show', auth()->user()) }}">   
                 <li class="liMainMenu">
                     <i class="fas fa-user iconNav"></i>
                     <p class="iconText">Perfil</p>
